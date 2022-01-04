@@ -14,7 +14,7 @@ public class Q17_SumAllNumbers {
             //terminating condition on pressing 0
             if (number==0)
                 break;
-            else if (number>0){
+            else {
                 sum=sum+number;
             }
         }

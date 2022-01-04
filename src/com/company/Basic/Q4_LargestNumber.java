@@ -16,9 +16,20 @@ public class Q4_LargestNumber {
         int number3= sc.nextInt();
 
         //comparing a and b and storing the largest number in a temp variable
-        temp=number1>number2?number1:number2;
-        //comparing the temp variable with c and storing the result in the variable
-        largest=number3>temp?number3:temp;
-        System.out.println("Largest number is : "+largest);
+//        temp=number1>number2?number1:number2;
+//        //comparing the temp variable with c and storing the result in the variable
+//        largest=number3>temp?number3:temp;
+//        System.out.println("Largest number is : "+largest);
+        if (number1>number2){
+            temp=number1;
+        }else {
+            temp=number2;
+        }
+        if (temp>number3){
+            largest=temp;
+        } else {
+            largest=number3;
+        }
+        System.out.println(largest);
     }
 }

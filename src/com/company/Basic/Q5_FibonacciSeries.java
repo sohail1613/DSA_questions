@@ -9,20 +9,20 @@ public class Q5_FibonacciSeries {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int number1=0;
-        int number2=1;
-        int number3;
+        int term1=0;
+        int term2=1;
+        int term3;
         System.out.print("Enter number to get Fibonacci series :");
         int number= sc.nextInt();
         System.out.println("Fibonacci series of the "+number+" is: ");
-        System.out.print(number1+" "+number2);
+        System.out.print(term1+" "+term2);
 
 
         for (int i=2; i<=number; i++){  // because we already sue 0and 1
-            number3=number1+number2;
-            System.out.print(" "+number3);
-            number1=number2;
-            number2=number3;
+            term3=term1+term2;
+            System.out.print(" "+term3);
+            term1=term2;
+            term2=term3;
         }
 
     }
