@@ -4,7 +4,7 @@ package com.company.Basic;
 
 import java.util.Scanner;
 
-public class LargestNumber {
+public class Q4_LargestNumber {
     public static void main(String[] args) {
         int temp, largest;
         Scanner sc= new Scanner(System.in);
