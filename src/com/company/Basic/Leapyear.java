@@ -1,7 +1,7 @@
 package com.company.Basic;
 
 import java.util.Scanner;
-
+// Change The Class Name as Q1_LeapYear //
 public class Leapyear {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
