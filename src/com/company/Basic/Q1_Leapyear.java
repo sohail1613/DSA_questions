@@ -3,6 +3,8 @@ package com.company.Basic;
 import java.util.Scanner;
 
 public class Q1_Leapyear {
+
+// Change The Class Name as Q1_LeapYear //
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter year :");
