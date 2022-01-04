@@ -22,7 +22,7 @@ public class Q15_LCM {
         }
         int hcf=a;
         int lcm=(number1*number2)/hcf;
-        //System.out.println("HCF is: "+hcf);
+        System.out.println("HCF is: "+hcf);
         System.out.println("The lcm of "+number1+" and "+number2+" is : "+lcm);
     }
 }
