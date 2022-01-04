@@ -1,3 +1,5 @@
+//Find the sum of natural numbers
+
 package com.company.Basic;
 
 import java.util.Scanner;
