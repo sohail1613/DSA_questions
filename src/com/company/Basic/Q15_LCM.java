@@ -7,15 +7,22 @@ import java.util.Scanner;
 public class Q15_LCM {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int gcd=1;
+        System.out.print("Enter first number :");
         int number1= sc.nextInt();
+        System.out.print("Enter second number :");
         int number2= sc.nextInt();
 
-        for (int i=1; i<=number1 && i<=number2; ++i){
-            if (number1%i==0 && number2%i==0)
-                gcd=i;
+        int a=number1;
+        int b= number2;
+
+        while (b!=0){
+            int t=a;
+            b=a%b;
+            a=t;
         }
-        int lcm=(number1*number2)/gcd;
+        int hcf=a;
+        int lcm=(number1*number2)/hcf;
+        //System.out.println("HCF is: "+hcf);
         System.out.println("The lcm of "+number1+" and "+number2+" is : "+lcm);
     }
 }
