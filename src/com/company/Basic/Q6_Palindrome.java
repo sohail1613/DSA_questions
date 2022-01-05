@@ -14,11 +14,15 @@ public class Q6_Palindrome {
         int temp =number;
         reverse=0;
 
-        for (;number!=0; number=number/10){
-            remainder=number%10;
-            reverse=reverse*10+remainder;
-        }
-
+//        for (;number!=0; number=number/10){
+//            remainder=number%10;
+//            reverse=reverse*10+remainder;
+//        }
+            while (number!=0){
+                remainder=number%10;
+                reverse=reverse*10+remainder;
+                number=number/10;
+            }
 
         // checking the given number is palindrome or not (by comparing with original number)
         if (reverse==temp){
