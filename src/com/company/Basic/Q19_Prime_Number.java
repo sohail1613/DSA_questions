@@ -17,7 +17,7 @@ public class Q19_Prime_Number {
             } else{
                 System.out.println("prime number: "+number);
             }
-            return;
+            //return;
         }
     }
 }

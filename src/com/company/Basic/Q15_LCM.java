@@ -1,5 +1,5 @@
 //LCM of 2 numbers
-
+//https://byjus.com/maths/lcm/
 package com.company.Basic;
 
 import java.util.Scanner;
