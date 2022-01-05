@@ -7,27 +7,28 @@ import java.util.Scanner;
 public class Q8_SubtractProductSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number :");
+        int number= sc.nextInt();
+        int number1=number;
+        int sum=0;
+        int product=1;
+        int result;
+
+        //for sum of digits
+        while (number!=0) {
+            sum=sum+number%10;
+            number=number/10;
+        }
+        System.out.println("Sum of the given integer is :"+sum);
 
         //for product
-        System.out.print("Enter first number :");
-        int number1 = sc.nextInt();
-        System.out.print("Enter Second number :");
-        int number2 = sc.nextInt();
-        //performing product of number1 and number2
-        int product=number1*number2;
-        System.out.println("Product of number1 & number2 is :"+product);
+        while (number1!=0) {
+            product=product*(number1%10);
+            number1=number1/10;
+        }
+        System.out.println("Product of the given integer is :"+product);
 
-        // for sum
-        System.out.print("Enter third number :");
-        int number3= sc.nextInt();
-        System.out.print("Enter fourth number :");
-        int number4 = sc.nextInt();
-        //performing addition operation
-        int sum=number3+number4;
-        System.out.println("Sum od number3 & number4 is :"+sum);
-
-        //Subtracting product and sum
-        int result=product-sum;
-        System.out.println("The result of product and sum is :"+result);
+        result=product-sum;
+        System.out.println("Final result of the given integer is :"+result);
     }
 }
