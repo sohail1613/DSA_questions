@@ -1,5 +1,5 @@
 //check and print the given number is palindrome or not
-//https://www.javatpoint.com/how-to-reverse-a-number-in-java
+
 
 package com.company.Basic;
 
