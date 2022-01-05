@@ -18,8 +18,9 @@ public class Q6_Palindrome {
             remainder=number%10;
             reverse=reverse*10+remainder;
         }
-       // System.out.println("Reverse number is :"+reverse);
 
+
+        // checking the given number is palindrome or not (by comparing with original number)
         if (reverse==temp){
             System.out.println("Yes, the given number is palindrome");
             System.out.println("The given number is :"+temp);
