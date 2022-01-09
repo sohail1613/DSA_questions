@@ -1,3 +1,5 @@
+// till the user enter zero(0) and print the sum of all numbers.
+
 package com.company.Basic;
 
 import java.util.Scanner;
