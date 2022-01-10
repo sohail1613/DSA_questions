@@ -29,7 +29,7 @@ public class Q12_NcrNpr {
 
         //combination nCr
         combination=n/r*(j);
-        System.out.println("The nCr is:"+combination);
+        System.out.println("The nCr is :"+combination);
 
         //permutation
         permutation=n/j;
