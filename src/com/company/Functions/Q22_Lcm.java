@@ -1,3 +1,5 @@
+//Find lcm without using gcd (input from user)
+
 package com.company.Functions;
 
 import java.util.Scanner;
