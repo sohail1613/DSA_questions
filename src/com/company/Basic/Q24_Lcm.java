@@ -8,15 +8,17 @@ public class Q24_Lcm {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number :");
-        int a= sc.nextByte();
-        int b= sc.nextByte();
+        int number1= sc.nextByte();
+        int number2= sc.nextByte();
 
-        int large=Math.max(a,b);
-        int small=Math.min(a,b);
+        int large=Math.max(number1,number2);
+        int small=Math.min(number1,number2);
 
         for (int i=large; ; i=i+large){
-            return;
+            if (i%small==0){
+                System.out.println("lcm is :"+i);
+                break;
+            }
         }
-        System.out.println("LCM of "+a+" and "+b+" is :");
     }
 }
