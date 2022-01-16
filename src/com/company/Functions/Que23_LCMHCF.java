@@ -1,4 +1,4 @@
-//Find lcm and hcf is the given input.
+//Find lcm and hcf is the given input.(input from user)
 
 package com.company.Functions;
 
