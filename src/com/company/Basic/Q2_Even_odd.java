@@ -1,3 +1,5 @@
+//Find Even and odd numbers.
+
 package com.company.Basic;
 
 import java.util.Scanner;
