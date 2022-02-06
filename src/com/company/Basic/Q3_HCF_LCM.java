@@ -1,4 +1,4 @@
-//Find HCF and LCM.
+//Find HCF and LCM (without using GCD)
 
 package com.company.Basic;
 
