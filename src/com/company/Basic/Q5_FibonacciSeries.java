@@ -1,4 +1,4 @@
-//find Fibonacci series upto n numbers
+//find Fibonacci series upto n numbers.
 // fibonacci series= sum of previous two values
 
 package com.company.Basic;
@@ -18,7 +18,7 @@ public class Q5_FibonacciSeries {
         System.out.print(term1+" "+term2);
 
 
-        for (int i=2; i<=number; i++){  // because we already use 0and 1
+        for (int i=2; i<=number; i++){  // because we already use 0 and 1
             term3=term1+term2;
             System.out.print(" "+term3);
             term1=term2;
