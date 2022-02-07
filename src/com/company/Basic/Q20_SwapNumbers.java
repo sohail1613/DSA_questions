@@ -24,7 +24,7 @@ public class Q20_SwapNumbers {
         number2=number1-number2;  //10=15-10===>5
         number1=number1-number2;  //15=15-5===>10
 
-        System.out.println("number1 :"+number1);
-        System.out.println("number2 :"+number2);
+        System.out.println("After swap number1 :"+number1);
+        System.out.println("After swap number2 :"+number2);
     }
 }
