@@ -9,7 +9,7 @@ public class Q9_Factorial {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number to get it's Factorial :");
         int number = sc.nextInt();
-        System.out.print("The Factorial is :");
+        System.out.print("Factorial is :");
         int factorial=1;
 
         for (int i=1; i<=number; i++){
