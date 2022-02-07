@@ -14,8 +14,10 @@ public class Q19_Prime_Number {
         for (int i=2; i<number; i++){
             if (number%i==0){
                 System.out.println("Not a prime number: "+number);
+                break;
             } else{
                 System.out.println("prime number: "+number);
+                break;
             }
             //return;
         }
