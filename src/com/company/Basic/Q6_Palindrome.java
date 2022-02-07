@@ -1,5 +1,5 @@
 //check and print the given number is palindrome or not
-
+// approach: original=reversed
 
 package com.company.Basic;
 

@@ -15,6 +15,6 @@ public class Q9_Factorial {
         for (int i=1; i<=number; i++){
             factorial=factorial*i;
         }
-        System.out.println("Factorial is "+factorial);
+        System.out.println(factorial);
     }
 }
