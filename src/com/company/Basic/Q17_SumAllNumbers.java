@@ -10,7 +10,7 @@ public class Q17_SumAllNumbers {
         int sum=0;  //initial value of sum
 
         while (true){
-            System.out.print("Enter numbers :");
+            System.out.print("Enter number :");
             int number= sc.nextInt();
 
             //terminating condition on pressing 0
