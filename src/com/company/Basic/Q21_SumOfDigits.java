@@ -23,6 +23,6 @@ public class Q21_SumOfDigits {
             sum=sum+number%10;
             number=number/10;
         }
-        System.out.println("Sum of the given number is :"+sum);
+        System.out.println("Sum of the given digits :"+sum);
     }
 }
