@@ -11,9 +11,17 @@ public class Q24_Lcm {
         int number1= sc.nextByte();
         System.out.print("Enter number2 :");
         int number2= sc.nextByte();
+        int large, small;
 
-        int large=Math.max(number1,number2);
-        int small=Math.min(number1,number2);
+//        int large=Math.max(number1,number2);
+//        int small=Math.min(number1,number2);
+        if (number1>number2){
+             large=number1;
+             small= number2;
+        } else {
+             large=number2;
+             small=number1;
+        }
 
         for (int i=large; ; i=i+large){
             if (i%small==0){
