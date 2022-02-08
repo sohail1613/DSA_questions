@@ -13,7 +13,7 @@ public class Q5_LeapYear {
         if(year%400==0 || year%4==0 && year%100!=0){
             System.out.print("It is a leap year :"+year);
         } else {
-            System.out.println("It's not leap year:"+year);
+            System.out.println("It's not leap year :"+year);
         }
     }
 
