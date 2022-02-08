@@ -13,7 +13,7 @@ public class Q10_DigitsSum {
             number=number/10;
         }
         System.out.println("Sum of an integer is :"+sum);
-        return number;
+        return sum;
     }
 
     public static void main(String[] args) {
