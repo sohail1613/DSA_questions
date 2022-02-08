@@ -5,7 +5,7 @@ package com.company.Functions;
 import java.util.Scanner;
 
 public class Q7_LargestNumber {
-    public static void printLargestNumber(int number1, int number2, int number3){
+    public static int printLargestNumber(int number1, int number2, int number3){
         int temp, largest;
         if (number1>number2){
              temp =number1;
@@ -18,7 +18,7 @@ public class Q7_LargestNumber {
             largest=number3;
         }
         System.out.println("The largest number is :"+largest);
-        return;
+        return largest;
     }
 
     public static void main(String[] args) {
