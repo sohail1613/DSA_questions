@@ -5,7 +5,6 @@
 
 package com.company.Functions;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Q6_OddEven {
@@ -23,6 +22,6 @@ public class Q6_OddEven {
         System.out.print("Enter number :");
         int number = sc.nextInt();
 
-        checkOddEven(number);
+        checkOddEven(number);   //call kiya function ko
     }
 }
