@@ -2,7 +2,6 @@
 
 package com.company.Functions;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Q2_Product {
