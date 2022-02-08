@@ -10,8 +10,8 @@ public class Q8_NumberSum {
         for (int i=1; i<=number; i++){
             sum=sum+i;
         }
-        System.out.println("Sum of n number is :"+sum);
-        return number;
+        System.out.println("Sum of given number is :"+sum);
+        return sum;
     }
 
     public static void main(String[] args) {
