@@ -4,7 +4,7 @@ package com.company.Functions;
 
 import java.util.Scanner;
 
-public class Que23_LCMHCF {
+public class Q23_LCMHCF {
     public static void LCMHCF(int number1, int number2){
         int temp1=number1;
         int temp2=number2;
