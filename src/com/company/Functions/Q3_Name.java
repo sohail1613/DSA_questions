@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Q3_Name {
     public static void printMyName(String name){
         System.out.print("Name is :"+name);
-        return;
     }
 
     public static void main(String[] args) {
