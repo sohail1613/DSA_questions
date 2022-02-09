@@ -4,29 +4,16 @@ import java.util.Scanner;
 
 public class Q12_SubtractDigits {
     public static int subtractDigitsProductSum(int number) {
-        int number1 = number;
-        //for sum
         int sum = 0;
-        while (number != 0) {
-            sum = sum + number % 10;
-            number = number / 10;
-        }
-        System.out.println("Sum of digits :"+sum);
-
-
-        //for Product
         int product = 1;
-        while (number1 != 0) {
-            product = product * (number1 % 10);
-            number1 = number1 / 10;
+
+        while (number > 0){
+            int digit = number % 10;
+            sum = sum + digit;              //sum += digit;
+            product = product * digit;      //product *= digit;
+            number = number / 10;         //number /= 10;
         }
-        System.out.println("Product of digits :"+product);
-
-
-        int subtract;
-        subtract = product - sum;
-        //System.out.println("The subtracted value of digits product and sum is :" + subtract);
-        return  subtract;
+        return product - sum;
     }
 
     public static void main(String[] args) {
