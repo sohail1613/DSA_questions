@@ -11,7 +11,7 @@ public class Q4_Factorial {
         for (int i =number; i>=1; i--){
             factorial=factorial*i;
         }
-        System.out.println("Factorial is :"+factorial);
+
         return factorial;
     }
 
@@ -20,6 +20,7 @@ public class Q4_Factorial {
         System.out.print("Enter number :");
         int number= sc.nextInt();
 
-        printFactorial(number); // calling function
+        int factorial = printFactorial(number); // calling function
+        System.out.println("Factorial is :"+factorial);
     }
 }

@@ -10,7 +10,7 @@ public class Q9_Fibonacci {
         System.out.println("Fibonacci series of "+number+" is :");
         System.out.print(term1+" "+term2);
 
-        for (int i=2; i<=number; i++){
+        for (int i=2; i<number; i++){
             term3=term1+term2;
             System.out.print(" "+term3);
             term1=term2;
@@ -25,5 +25,6 @@ public class Q9_Fibonacci {
         int number= sc.nextInt();
 
         int term3=calculateFibonacciSeries(number);
+        System.out.println(" "+term3);
     }
 }

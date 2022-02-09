@@ -10,7 +10,7 @@ public class Q8_NumberSum {
         for (int i=1; i<=number; i++){
             sum=sum+i;
         }
-        System.out.println("Sum of given number is :"+sum);
+
         return sum;
     }
 
@@ -19,6 +19,8 @@ public class Q8_NumberSum {
         System.out.print("Enter number for sum :");
         int number= sc.nextInt();
 
-        int sum=sumNNumber(number);
+        int sum=sumNNumber(number); //function called
+        System.out.print("Sum of the given number is :");
+        System.out.println(sum);
     }
 }

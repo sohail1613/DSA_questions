@@ -17,7 +17,7 @@ public class Q7_LargestNumber {
         } else {
             largest=number3;
         }
-        System.out.println("The largest number is :"+largest);
+        System.out.print("The largest number is :");
         return largest;
     }
 
@@ -30,6 +30,7 @@ public class Q7_LargestNumber {
         System.out.print("Enter third number :");
         int number3= sc.nextInt();
 
-        printLargestNumber(number1, number2, number3);
+        int largest = printLargestNumber(number1, number2, number3);
+        System.out.println(largest);
     }
 }

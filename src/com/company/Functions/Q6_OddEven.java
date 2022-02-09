@@ -10,9 +10,9 @@ import java.util.Scanner;
 public class Q6_OddEven {
     public static int checkOddEven(int number){
         if (number%2==0){
-            System.out.println("Given number is even :"+number);
+            System.out.print("Given number is even :");
         } else {
-            System.out.println("Given number is odd :"+number);
+            System.out.print("Given number is odd :");
         }
         return number;
     }
@@ -22,6 +22,7 @@ public class Q6_OddEven {
         System.out.print("Enter number :");
         int number = sc.nextInt();
 
-        checkOddEven(number);   //call kiya function ko
+       // checkOddEven(number);   //call kiya function ko
+        System.out.println(checkOddEven(number));
     }
 }
