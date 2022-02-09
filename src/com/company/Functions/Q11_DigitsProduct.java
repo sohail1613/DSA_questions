@@ -10,7 +10,7 @@ public class Q11_DigitsProduct {
             number=number/10;
         }
         System.out.println("Products of digit is :"+product);
-        return product;
+        return number;
     }
 
     public static void main(String[] args) {

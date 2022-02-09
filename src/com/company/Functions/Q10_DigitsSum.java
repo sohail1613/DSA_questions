@@ -12,7 +12,7 @@ public class Q10_DigitsSum {
             sum=sum+number%10;
             number=number/10;
         }
-        System.out.println("Sum of an integer is :"+sum);
+
         return sum;
     }
 
@@ -20,7 +20,7 @@ public class Q10_DigitsSum {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter number :");
         int number= sc.nextInt();
-
-        printDigitsSum(number);
+        
+        System.out.println("Sum of an integer is :"+printDigitsSum(number));
     }
 }
