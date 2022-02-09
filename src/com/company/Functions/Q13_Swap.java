@@ -2,7 +2,6 @@
 
 package com.company.Functions;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Q13_Swap {
@@ -13,7 +12,6 @@ public class Q13_Swap {
         System.out.println("After swapping numbers becomes :");
         System.out.println("Number1 is :"+number1);
         System.out.println("Number2 is: "+number2);
-        return ;
     }
 
     public static void main(String[] args) {

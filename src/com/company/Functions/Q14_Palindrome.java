@@ -22,7 +22,6 @@ public class Q14_Palindrome {
         } else {
             System.out.println("Given number is not palindrome "+temp+" != "+reverse);
         }
-        return ;
     }
 
     public static void main(String[] args) {
