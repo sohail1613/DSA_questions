@@ -22,7 +22,7 @@ public class Q11_DigitsProduct {
         int result = printDigitsProduct(number); //calling function
         System.out.println("Products of digit is :"+result);
 
-        //we can also call directly
+        //We can also call directly
         //System.out.println("Products of digit is :"+printDigitsProduct(number));
     }
 }
