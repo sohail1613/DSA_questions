@@ -5,22 +5,20 @@ package com.company.Functions;
 import java.util.Scanner;
 
 public class Q14_Palindrome {
-    public static void printPalindrome(int number){
+    public static boolean isPalindrome(int number){
         int temp = number;
         int reverse=0;
         int remainder;
         while (number!=0){
             remainder=number%10;
-            reverse=reverse*10+remainder;
-            number=number/10;
+            reverse = reverse*10+remainder;
+            number /= 10;
         }
 
         if (temp==reverse){
-            System.out.println("Yes, given number is palindrome");
-            System.out.println("Given number is :"+temp);
-            System.out.println("Reverse of the given number is: "+reverse);
+            return true;
         } else {
-            System.out.println("Given number is not palindrome "+temp+" != "+reverse);
+            return false;
         }
     }
 
@@ -29,6 +27,10 @@ public class Q14_Palindrome {
         System.out.print("Enter number :");
         int number= sc.nextInt();
 
-        printPalindrome(number);
+        if (isPalindrome(number)){
+            System.out.println("It's a palindrome number :"+number);
+        } else {
+            System.out.println("It's not a palindrome :"+number);
+        }
     }
 }
