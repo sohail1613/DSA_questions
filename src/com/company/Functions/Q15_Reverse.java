@@ -5,7 +5,7 @@ package com.company.Functions;
 import java.util.Scanner;
 
 public class Q15_Reverse {
-    public static void printReverseString(String name){
+    public static String printReverseString(String name){
         String reverse="";
         char ch;
 
@@ -13,7 +13,7 @@ public class Q15_Reverse {
             ch=name.charAt(i);
             reverse=ch+reverse;
         }
-        System.out.println("Reversed String is :"+reverse);
+        return reverse;
     }
 
     public static void main(String[] args) {
@@ -21,6 +21,7 @@ public class Q15_Reverse {
         System.out.print("Enter string to get reverse :");
         String name= sc.nextLine();
 
-        printReverseString(name);
+        String reversed= printReverseString(name);
+        System.out.println("Reversed String is :"+reversed);
     }
 }
