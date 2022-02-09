@@ -11,7 +11,8 @@ public class Q12_SubtractDigits {
             sum = sum + number % 10;
             number = number / 10;
         }
-        System.out.println("Sum of digits is :" + sum);
+        System.out.println("Sum of digits :"+sum);
+
 
         //for Product
         int product = 1;
@@ -19,13 +20,13 @@ public class Q12_SubtractDigits {
             product = product * (number1 % 10);
             number1 = number1 / 10;
         }
-        System.out.println("Product of digits is :" + product);
+        System.out.println("Product of digits :"+product);
+
 
         int subtract;
         subtract = product - sum;
-        System.out.println("The subtracted value of digits product and sum is :" + subtract);
-
-        return number;
+        //System.out.println("The subtracted value of digits product and sum is :" + subtract);
+        return  subtract;
     }
 
     public static void main(String[] args) {
@@ -33,6 +34,7 @@ public class Q12_SubtractDigits {
         System.out.print("Enter integer digits :");
         int number = sc.nextInt();
 
-        subtractDigitsProductSum(number);
+        //subtractDigitsProductSum(number);
+        System.out.println("Final answer is :"+subtractDigitsProductSum(number));
     }
 }
