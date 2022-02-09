@@ -18,7 +18,7 @@ public class Q11_DigitsProduct {
         System.out.print("Enter integer value :");
         int number= sc.nextInt();
 
-        //two different to call function
+        //two different way to call function
         int result = printDigitsProduct(number); //calling function
         System.out.println("Products of digit is :"+result);
 
