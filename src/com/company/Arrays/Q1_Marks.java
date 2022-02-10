@@ -16,8 +16,8 @@ public class Q1_Marks {
         System.out.println("Marks in maths :"+marks[0]);
         System.out.println("Marks in physics :"+marks[1]);
         System.out.println("Marks in chemistry :"+marks[2]);
-        
-        //we can solve by using loop
+
+        //we can also solve by using for loop
         System.out.println("Solving with for loop");
 
         for (int i=0; i<3; i++){
