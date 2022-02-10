@@ -17,8 +17,8 @@ public class Q5_MinAndMax {
             number[i] = aa.nextInt();
         }
 
-        int max = Integer.MAX_VALUE;
-        int min = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
 
         //output
         for (int i=0; i< number.length; i++){
