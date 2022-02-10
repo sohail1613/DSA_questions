@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Q19_InputSum {
     public static void printInputSum(int number){
         int sum=0;
-System.out.print("Enter number :");
+        System.out.print("Enter number :");
         while (true){
 
             if (number==0)
