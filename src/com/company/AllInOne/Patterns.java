@@ -20,6 +20,9 @@ public class Patterns {
 
         System.out.println("Solid half pyramid");
         halfPyramid(number1);
+
+        System.out.println("Inverted half pyramid.");
+        invertedHalfPyramid(number1);
     }
 
 
@@ -58,6 +61,22 @@ public class Patterns {
         for (int i=0; i<=star; i++){
             for (int j=0; j<=i; j++){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    //Solid inverted half pyramid
+    public static void invertedHalfPyramid(int star){
+        for (int i=1; i<=star; i++){
+            //printing spaces
+            for (int j=1; j<=star-i; j++){
+                System.out.print(" ");
+            }
+
+            //printing star
+            for (int j=1; j<=i; j++){
+                System.out.print("*");
             }
             System.out.println();
         }
