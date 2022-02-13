@@ -42,6 +42,7 @@ public class Patterns {
         for (int i=0; i<=rowstar; i++){
             //column stars
             for (int j=0; j<=colstar; j++){
+                //tracking boundary
                 if (i==0 || j==0 || i==rowstar || j==colstar){
                     System.out.print("*");
                 } else {
