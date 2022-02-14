@@ -23,6 +23,9 @@ public class Patterns {
 
         System.out.println("Inverted half pyramid.");
         invertedHalfPyramid(number1);
+
+        System.out.println("Inverted half and 180 rotated pyramid");
+        halfRotatedPyramid(number1);
     }
 
 
@@ -68,16 +71,29 @@ public class Patterns {
 
     //Solid inverted half pyramid
     public static void invertedHalfPyramid(int star){
-        for (int i=1; i<=star; i++){
+        for (int i=star; i>=1; i--){
             //printing spaces
+            for (int j=1; j<=i; j++){
+                System.out.print("* "); //printing stars
+            }
+            System.out.println(); // printing next line
+        }
+    }
+
+    //Inverted half pyramid rotated.
+    public static void halfRotatedPyramid(int star){
+        for (int i=1; i<=star; i++){
+            //inner and printing spaces
             for (int j=1; j<=star-i; j++){
                 System.out.print(" ");
             }
 
-            //printing star
+            //inner loop printing stars
             for (int j=1; j<=i; j++){
                 System.out.print("*");
             }
+
+            //printing next line
             System.out.println();
         }
     }
