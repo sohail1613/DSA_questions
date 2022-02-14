@@ -33,8 +33,8 @@ public class Patterns {
         System.out.println("Inverted numerical half pyramid");
         numericalHalfInvertedPyramid(number1);
 
-//        System.out.println("Floyd's triangle");
-//        floydTriangle(number1);
+        System.out.println("Floyd's triangle");
+        floydTriangle(number1);
 
         System.out.println("Binary pattern");
         binaryPattern(number1);
@@ -150,10 +150,11 @@ public class Patterns {
 
     //Floyd's Triangle
     public static void floydTriangle(int number) {
-        for (int i = 1; i <= number; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(number);
-                number++;
+        int numerical=1;
+        for (int i=1; i<=number; i++) {
+            for (int j=1; j<=i; j++) {
+                System.out.print(numerical+" ");
+                numerical++;
             }
             System.out.println();
         }
