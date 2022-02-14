@@ -26,6 +26,12 @@ public class Patterns {
 
         System.out.println("Inverted half and 180 rotated pyramid");
         halfRotatedPyramid(number1);
+
+        System.out.println("Half number pyramid");
+        numericalHalfPyramid(number1);
+
+        System.out.println("Inverted numerical half pyramid");
+        numericalHalfInvertedPyramid(number1);
     }
 
 
@@ -94,6 +100,26 @@ public class Patterns {
             }
 
             //printing next line
+            System.out.println();
+        }
+    }
+
+    //Numerical half pyramid
+    public static void numericalHalfPyramid(int number){
+        for (int i=1; i<=number; i++){  //outer loop
+            for (int j=1; j<=i; j++){  //inner loop
+                System.out.print(j+" ");  //printing numbers
+            }
+            System.out.println();  //printing next line
+        }
+    }
+
+    //Inverted half numerical pyramid
+    public static void numericalHalfInvertedPyramid(int number){
+        for (int i=1; i<=number; i++){
+            for (int j=1; j<=number-i+1; j++){
+                System.out.print(j+" ");
+            }
             System.out.println();
         }
     }
