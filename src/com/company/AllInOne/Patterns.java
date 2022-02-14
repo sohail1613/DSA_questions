@@ -48,7 +48,8 @@ public class Patterns {
         System.out.println("Palindrome pattern.");
         palindrome(number1);
 
-        
+        System.out.println("Diamond pattern.");
+        diamond(number1);
     }
 
 
@@ -212,6 +213,22 @@ public class Patterns {
                 System.out.print(j);
             }
             System.out.println();  //next line
+        }
+    }
+
+    //Diamond pattern
+    public static void diamond(int number){
+        //top part
+        for (int i=1; i<=number; i++){
+            for (int j=1; j<=number-i; j++){ //spaces
+                System.out.print(" ");
+            }
+
+            //printing stars
+            for (int j=1; j<=2*number-i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
