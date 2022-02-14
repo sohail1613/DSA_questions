@@ -35,6 +35,9 @@ public class Patterns {
 
         System.out.println("Binary pattern");
         binaryPattern(number1);
+
+        System.out.println("Solid rhombus");
+        solidRhombus(number1);
     }
 
 
@@ -153,6 +156,17 @@ public class Patterns {
         }
     }
 
-    
-
+    //Solid Rhombus
+    public static void solidRhombus(int star){
+        for (int i=1; i<=star; i++){
+            for (int j=1; j<=star-i; j++){ //printing spaces
+                System.out.print(" ");
+            }
+            //printing stars
+            for (int j=1; j<=star; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 }
