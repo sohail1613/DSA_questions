@@ -33,11 +33,17 @@ public class Patterns {
         System.out.println("Inverted numerical half pyramid");
         numericalHalfInvertedPyramid(number1);
 
+        System.out.println("Floyd's triangle");
+        floydTriangle(number1);
+
         System.out.println("Binary pattern");
         binaryPattern(number1);
 
         System.out.println("Solid rhombus");
         solidRhombus(number1);
+
+        System.out.println("Number pyramid");
+        numberPyramid(number1);
     }
 
 
@@ -165,6 +171,21 @@ public class Patterns {
             //printing stars
             for (int j=1; j<=star; j++){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    //Number pyramid
+    public static void numberPyramid(int number){
+        for (int i=1; i<=number; i++){
+            //spaces
+            for (int j=1; j<=number-i; j++){
+                System.out.print(" ");
+            }
+            //printing numbers
+            for (int j=1; j<=i; j++){
+                System.out.print(i+" ");
             }
             System.out.println();
         }
