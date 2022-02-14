@@ -33,8 +33,8 @@ public class Patterns {
         System.out.println("Inverted numerical half pyramid");
         numericalHalfInvertedPyramid(number1);
 
-        System.out.println("Floyd's triangle");
-        floydTriangle(number1);
+//        System.out.println("Floyd's triangle");
+//        floydTriangle(number1);
 
         System.out.println("Binary pattern");
         binaryPattern(number1);
@@ -47,6 +47,9 @@ public class Patterns {
 
         System.out.println("Palindrome pattern.");
         palindrome(number1);
+
+        System.out.println("Diamond pattern");
+        diamondPattern(number1);
 
     }
 
@@ -202,7 +205,7 @@ public class Patterns {
             }
 
             //left side
-            for (int j = i; j >= i; j--) {
+            for (int j = i; j >= 1; j--) {
                 System.out.print(j);
             }
             //right side
@@ -210,6 +213,31 @@ public class Patterns {
                 System.out.print(j);
             }
             System.out.println();  //next line
+        }
+    }
+    //Diamond pattern
+    public static void diamondPattern(int number) {
+        //upper part
+        for (int i=1; i<=number; i++) {
+            //printing spaces
+            for (int j=1; j<=number-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j=1; j<= 2*i-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        //lower part
+        for (int i=number; i>=1; i--) {
+            //printing spaces
+            for (int j=1; j<=number-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j=1; j<=2*i-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
