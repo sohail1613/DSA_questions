@@ -44,6 +44,11 @@ public class Patterns {
 
         System.out.println("Number pyramid");
         numberPyramid(number1);
+
+        System.out.println("Palindrome pattern.");
+        palindrome(number1);
+
+        
     }
 
 
@@ -188,6 +193,25 @@ public class Patterns {
                 System.out.print(i+" ");
             }
             System.out.println();
+        }
+    }
+
+    //Palindrome pattern
+    public static void palindrome(int number){
+        for (int i=1; i<=number; i++){
+            for (int j=1; j<=number-i; j++){ //spcaes
+                System.out.print(" ");
+            }
+
+            //left side
+            for (int j=i; j>=i; j--){
+                System.out.print(j);
+            }
+            //right side
+            for (int j=2; j<=i; j++){
+                System.out.print(j);
+            }
+            System.out.println();  //next line
         }
     }
 }
