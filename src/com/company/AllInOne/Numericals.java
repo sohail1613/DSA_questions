@@ -14,6 +14,8 @@ public class Numericals {
         System.out.println("Sum of two numbers is :"+addition(number1,number2));
 
         System.out.println("Subtraction of two numbers is: "+subtraction(number1,number2));
+
+        leapYear(number1);
     }
 
     //Addition
@@ -27,7 +29,14 @@ public class Numericals {
         return number1-number2;
     }
 
+
+    //Leap year
     public static int leapYear(int number){
-        
+        if (number%400 == 0 || number%4 ==0 && number%100 !=0){
+            System.out.println("It's leap year :"+number);
+        } else {
+            System.out.println("It's not leap year :"+number);
+        }
+        return number;
     }
 }
