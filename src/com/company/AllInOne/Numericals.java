@@ -9,6 +9,8 @@ public class Numericals {
         int number1 = sc.nextInt();;
         System.out.print("Enter number2 :");
         int number2 = sc.nextInt();
+        System.out.print("Enter number3 :");
+        int number3 = sc.nextInt();
 
         //calling functions
         System.out.println("Sum of two numbers is :"+addition(number1,number2));
@@ -18,6 +20,8 @@ public class Numericals {
         leapYear(number1);
 
         oddEven(number1);
+
+        System.out.println("Largest number is :"+largestNumber(number1,number2,number3));
     }
 
     //Addition
@@ -48,5 +52,20 @@ public class Numericals {
         } else {
             System.out.println("Given number is odd :"+number);
         }
+    }
+
+    public static int largestNumber(int number1, int number2, int number3){
+        int temp, largest;
+        if (number1>number2){
+             temp=number1;
+        } else {
+            temp =number2;
+        }
+        if (temp>number3){
+            largest=temp;
+        } else {
+            largest=number3;
+        }
+        return largest;
     }
 }
