@@ -22,6 +22,8 @@ public class Numericals {
         oddEven(number1);
 
         System.out.println("Largest number is :"+largestNumber(number1,number2,number3));
+
+        fibonacciSeries(number1);
     }
 
     //Addition
@@ -67,5 +69,20 @@ public class Numericals {
             largest=number3;
         }
         return largest;
+    }
+
+    public static void fibonacciSeries(int number){
+        int temp1=0;
+        int temp2=1;
+        int temp3;
+        System.out.print("Fibonacci series of "+number+" is :");
+        System.out.print(temp1+" "+temp2);
+
+        for (int i=2; i<=number; i++){
+            temp3=temp1+temp2;
+            System.out.print(" "+temp3);
+            temp1=temp2;
+            temp2=temp3;
+        }
     }
 }
