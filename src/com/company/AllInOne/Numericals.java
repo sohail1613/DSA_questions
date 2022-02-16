@@ -24,6 +24,8 @@ public class Numericals {
         System.out.println("Largest number is :"+largestNumber(number1,number2,number3));
 
         fibonacciSeries(number1);
+
+        System.out.println("Sum of the n numbers is: "+numberSum(number1));
     }
 
     //Addition
@@ -48,6 +50,7 @@ public class Numericals {
         return number;
     }
 
+    //Check odd and even numbers
     public static void oddEven(int number){
         if (number%2==0){
             System.out.println("Given number is even :"+number);
@@ -56,6 +59,7 @@ public class Numericals {
         }
     }
 
+    //check and print largest number
     public static int largestNumber(int number1, int number2, int number3){
         int temp, largest;
         if (number1>number2){
@@ -71,6 +75,7 @@ public class Numericals {
         return largest;
     }
 
+    //Print fibonacci series
     public static void fibonacciSeries(int number){
         int temp1=0;
         int temp2=1;
@@ -84,5 +89,15 @@ public class Numericals {
             temp1=temp2;
             temp2=temp3;
         }
+        System.out.println();
+    }
+
+    //print sum of n numbers
+    public static int numberSum(int number){
+        int sum=0;
+        for (int i=1; i<=number; i++){
+            sum=sum+i;
+        }
+        return sum;
     }
 }
