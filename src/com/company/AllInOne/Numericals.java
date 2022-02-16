@@ -119,4 +119,7 @@ public class Numericals {
             System.out.println("Given number is not palindrome.");
         }
     }
+
+    //subtract the product sum of an integer
+    
 }
