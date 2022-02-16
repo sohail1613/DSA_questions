@@ -26,6 +26,8 @@ public class Numericals {
         fibonacciSeries(number1);
 
         System.out.println("Sum of the n numbers is: "+numberSum(number1));
+
+        palindromeNumber(number1);
     }
 
     //Addition
@@ -99,5 +101,22 @@ public class Numericals {
             sum=sum+i;
         }
         return sum;
+    }
+
+    //palindrome number
+    public static void palindromeNumber(int original){
+        int duplicate=original;
+        int remainder, reverse=0;
+
+        while (original!=0){
+            remainder=original%10;
+            reverse=reverse*10+remainder;
+            original=original/10;
+        }
+        if (reverse==duplicate){
+            System.out.println("Given number is palindrome.");
+        } else {
+            System.out.println("Given number is not palindrome.");
+        }
     }
 }
