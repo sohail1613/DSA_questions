@@ -16,6 +16,8 @@ public class Numericals {
         System.out.println("Subtraction of two numbers is: "+subtraction(number1,number2));
 
         leapYear(number1);
+
+        oddEven(number1);
     }
 
     //Addition
@@ -38,5 +40,13 @@ public class Numericals {
             System.out.println("It's not leap year :"+number);
         }
         return number;
+    }
+
+    public static void oddEven(int number){
+        if (number%2==0){
+            System.out.println("Given number is even :"+number);
+        } else {
+            System.out.println("Given number is odd :"+number);
+        }
     }
 }
