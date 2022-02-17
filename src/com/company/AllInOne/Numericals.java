@@ -32,6 +32,8 @@ public class Numericals {
         System.out.println("An integer product sum subtracted value is :"+subtractProductSum(number1));
 
         swap(number1, number2);
+
+        System.out.println("Power of "+number1+" with exponent "+number2+" "+power(number1, number2));
     }
 
     //Addition
@@ -143,5 +145,14 @@ public class Numericals {
         first=first-second;
         System.out.println("First number is :"+first);
         System.out.println("Second number is :"+second);
+    }
+
+    //power program
+    public static int power(int base, int exponent){
+        int power=1;
+        for (int i=1; i<=exponent; i++){
+            power=power*base;
+        }
+        return power;
     }
 }
