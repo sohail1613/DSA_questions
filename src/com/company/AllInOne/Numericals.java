@@ -35,7 +35,13 @@ public class Numericals {
 
         System.out.println("Power of "+number1+" with exponent "+number2+" "+power(number1, number2));
 
-        checkPrime(number1);
+
+        //check prime number
+        if (isPrime(number1)){
+            System.out.println(number1+" is a prime number.");
+        } else {
+            System.out.println(number1+" is not prime number.");
+        }
     }
 
     //Addition
@@ -158,14 +164,14 @@ public class Numericals {
         return power;
     }
 
-    //check prime
-    public static void checkPrime(int number){
-        for (int i=2; i<=number/2; i++){
-            if (number%2==0){
-                System.out.println("not prime");
-            } else {
-                System.out.println("prime");
+    //check prime number
+    public static boolean isPrime(int number){
+        int i;
+        for ( i=2; i<=number/2; i++){
+            if (number%i==0){
+                break;
             }
         }
+        return i>number/2;
     }
 }
