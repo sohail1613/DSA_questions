@@ -14,7 +14,7 @@ public class Q18_PrimeNumbers {
     }
 
     public static void main(String[] args) {
-        int number=100;
+        int number=23;
        printPrimeNumbers(number);  // call kiya function ko
 
         if (printPrimeNumbers(number)){

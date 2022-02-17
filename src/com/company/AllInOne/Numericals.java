@@ -34,6 +34,8 @@ public class Numericals {
         swap(number1, number2);
 
         System.out.println("Power of "+number1+" with exponent "+number2+" "+power(number1, number2));
+
+        checkPrime(number1);
     }
 
     //Addition
@@ -154,5 +156,16 @@ public class Numericals {
             power=power*base;
         }
         return power;
+    }
+
+    //check prime
+    public static void checkPrime(int number){
+        for (int i=2; i<=number/2; i++){
+            if (number%2==0){
+                System.out.println("not prime");
+            } else {
+                System.out.println("prime");
+            }
+        }
     }
 }
