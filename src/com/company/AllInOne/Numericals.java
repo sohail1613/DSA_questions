@@ -30,6 +30,8 @@ public class Numericals {
         palindromeNumber(number1);
 
         System.out.println("An integer product sum subtracted value is :"+subtractProductSum(number1));
+
+        swap(number1, number2);
     }
 
     //Addition
@@ -132,5 +134,14 @@ public class Numericals {
             number=number/10;
         }
         return product-sum;
+    }
+
+    //swapping 2 numbers without using third variable.
+    public static void swap(int first, int second){
+        first=first+second;
+        second=first-second;
+        first=first-second;
+        System.out.println("First number is :"+first);
+        System.out.println("Second number is :"+second);
     }
 }
