@@ -44,6 +44,8 @@ public class Numericals {
         }
 
         System.out.println("LCM of "+number1+" and "+number2+" is :"+lcm(number1, number2));
+
+        lcmHcf(number1, number2);
     }
 
     //Addition
@@ -193,5 +195,23 @@ public class Numericals {
                 return i;
             }
         }
+    }
+
+    //find lcm and hcf
+    public static void lcmHcf(int number1, int number2){
+        int temp1=number1;
+        int temp2=number2;
+        int lcm, hcf, temp;
+
+        while (temp2!=0){
+            temp = temp2;
+            temp2 = temp1 % temp2;
+            temp1 =temp;
+        }
+        hcf = temp1;
+        lcm = (number1*number2)/hcf;
+
+        System.out.println("LCM is :"+lcm);
+        System.out.println("HCF is :"+hcf);
     }
 }
