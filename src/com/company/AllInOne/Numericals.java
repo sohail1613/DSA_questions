@@ -42,6 +42,8 @@ public class Numericals {
         } else {
             System.out.println(number1+" is not prime number.");
         }
+
+        System.out.println("LCM of "+number1+" and "+number2+" is :"+lcm(number1, number2));
     }
 
     //Addition
@@ -173,5 +175,23 @@ public class Numericals {
             }
         }
         return i>number/2;
+    }
+
+    //find lcm
+    public static int lcm(int number1, int number2){
+        int large, small;
+        if (number1 > number2){
+            large = number1;
+            small = number2;
+        } else {
+            large = number2;
+            small = number1;
+        }
+
+        for (int i=large; ; i=i+large){
+            if (i % small == 0){
+                return i;
+            }
+        }
     }
 }
