@@ -46,6 +46,9 @@ public class Numericals {
         System.out.println("LCM of "+number1+" and "+number2+" is :"+lcm(number1, number2));
 
         lcmHcf(number1, number2);
+
+        System.out.println("LCM is :"+findLcm(number1, number2));
+        System.out.println("HCF is :"+findHcf(number1, number2));
     }
 
     //Addition
@@ -213,5 +216,29 @@ public class Numericals {
 
         System.out.println("LCM is :"+lcm);
         System.out.println("HCF is :"+hcf);
+    }
+
+    //https://github.com/zaidhafeez/PracticeDSA/blob/main/src/practice/assignment/assignment1/Q4_HCF_LCM.java
+    //find lcm and hcf (another logic)
+    private static int findLcm(int number1, int number2){
+        int large=(number1>number2) ? number1 : number2;
+
+        while (true){
+            if (large % number1 ==0 && large%number2==0){
+                return large;
+            } else {
+                large++;
+            }
+        }
+    }
+    private static int findHcf(int number1, int number2){
+        while (number1 != number2){
+            if (number1>number2){
+                number1=number1-number2;
+            } else {
+                number2 = number2-number1;
+            }
+        }
+        return number1;
     }
 }
