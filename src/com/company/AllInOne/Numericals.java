@@ -28,6 +28,8 @@ public class Numericals {
         System.out.println("Sum of the n numbers is: "+numberSum(number1));
 
         palindromeNumber(number1);
+
+        System.out.println("An integer product sum subtracted value is :"+subtractProductSum(number1));
     }
 
     //Addition
@@ -121,5 +123,14 @@ public class Numericals {
     }
 
     //subtract the product sum of an integer
-    
+    public static int subtractProductSum(int number){
+        int sum=0, product=1, digit;
+        while (number!=0){
+            digit=number%10;
+            sum=sum+digit;
+            product=product*digit;
+            number=number/10;
+        }
+        return product-sum;
+    }
 }
