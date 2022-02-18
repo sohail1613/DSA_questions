@@ -49,7 +49,7 @@ public class Q9_SpiralMatrix {
                 System.out.print(matrix[i][colStart]+" ");
             }
             colStart ++;
-            
+
         }
     }
 }
