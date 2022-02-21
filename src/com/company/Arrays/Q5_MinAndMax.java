@@ -14,7 +14,7 @@ public class Q5_MinAndMax {
         //array
         int number[] = new int[size];
 
-        //input
+        //input and storing at index i.
         for (int i=0; i<size; i++){
             System.out.print("Enter numbers :");
             number[i] = aa.nextInt();
@@ -25,6 +25,7 @@ public class Q5_MinAndMax {
 
         //output
         for (int i=0; i< number.length; i++){
+            //applying if condition.
             if (number[i]>max){
                 max = number[i];
             }
