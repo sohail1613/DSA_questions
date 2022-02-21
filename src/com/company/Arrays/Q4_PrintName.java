@@ -14,7 +14,7 @@ public class Q4_PrintName {
         //array
         String name[] = new String[size];
 
-        //input
+        //input from user for each index.
         for (int i=0; i<size; i++){
             System.out.print("Enter names : ");
             name[i] = eb.next();
