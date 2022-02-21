@@ -27,7 +27,6 @@ public class Q13_PrintAscending {
                }
            }
         }
-        System.out.println();
 
         //printing array in ascending order.
         System.out.print("Ascending order of the array is :");
