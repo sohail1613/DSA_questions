@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Q5_CumulativeStringBuilder {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter size of array: ");
+        System.out.print("Enter array size: ");
         int size= sc.nextInt();
         String array[] = new String[size];
 
