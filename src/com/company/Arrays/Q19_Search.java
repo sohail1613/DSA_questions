@@ -4,10 +4,12 @@ public class Q19_Search {
     public static void main(String[] args) {
         int nums[] = {23, 45, 7, 8, 9, 34, 90, -5, -3, 90, 11};
         int target = 9;
-        System.out.println(lenearSearch(nums, target));
+        System.out.println(linearSearch(nums, target));
     }
-    
-    public static int lenearSearch(int arr[], int target){
+
+    // search in the array: return the index if item found
+    //otherwise return -1
+    public static int linearSearch(int arr[], int target){
         if (arr.length == 0){
             return -1;
         }
