@@ -36,7 +36,7 @@ public class Q23_RotateMatrix {
             }
         }
 
-        //compare rotations and itself
+        //compare rotations and itself.
         if (Arrays.deepEquals(target, reverse) || Arrays.deepEquals(target, reverse2) || Arrays.deepEquals(target, reverse3) || Arrays.deepEquals(target, matrix)){
             return true;
         }
