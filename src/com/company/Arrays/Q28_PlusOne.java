@@ -2,10 +2,13 @@
 
 package com.company.Arrays;
 
+import java.util.Arrays;
+
 public class Q28_PlusOne {
     public static void main(String[] args) {
         int digits[] ={1, 2, 3};
-        System.out.println(plusOne(digits));
+        int answer[] = plusOne(digits);
+        System.out.println(Arrays.toString(answer));
 
     }
     public static int[] plusOne(int digits[]){
