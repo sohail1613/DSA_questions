@@ -20,7 +20,7 @@ public class Q27_ReshapeMatrix {
             return matrix;
 
         //creating new matrix
-        int[][] answer = new int[r][c];
+        int answer[][] = new int[r][c];
         int answer_rows = 0;
         int answer_cols = 0;
 
