@@ -8,12 +8,12 @@ public class Q26_SubArraySum {
         System.out.println(maxSubArray(array));
     }
 
-    public static int maxSubArray(int nums[]){
+    public static int maxSubArray(int array[]){
         int max = Integer.MIN_VALUE;
         int sum = 0;
 
-        for (int i=0; i<nums.length; i++){
-            sum += nums[i];
+        for (int i=0; i<array.length; i++){
+            sum += array[i];
             max = Math.max(sum, max);
 
             if (sum < 0) sum=0;
