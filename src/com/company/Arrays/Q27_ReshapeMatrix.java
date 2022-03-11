@@ -3,13 +3,16 @@
 
 package com.company.Arrays;
 
+import java.util.Arrays;
+
 public class Q27_ReshapeMatrix {
     public static void main(String[] args) {
         int matrix[][] = {{1,2},{3,4}};
         int row=1;
         int col=4;
+        int answer [][]= matrixReshape(matrix, row, col);
 
-        System.out.println(matrixReshape(matrix, row, col));
+        System.out.println(Arrays.toString(answer));
     }
 
     public static int[][] matrixReshape(int[][] matrix, int r, int c){
