@@ -7,23 +7,19 @@ public class Q5_Square {
     }
 
     static int mySqrt(int x) {
-        if(x <= 1) return x;
-        int start =1;
-        int end = x/2;
-
-        while(start < end){
-            // start is not always moving and hence we can get stuck in infinite loop with mid calculation
-            // Adding 1 to mid everytime to ensure we always move the mid
-            int mid = (start +(end - start)/2) +1;
-
-
-            // use division instead of multiplication to avoid overflow
-            int div = x/mid;
-
-            if(div == mid) return mid;
-            if(div > mid) start = end;
-            else end = mid-1;
+        int left = 1, right = x/2;
+        while ( left <= right) {
+            int mid = (left + right) /2;
+            if (mid > x /mid) {
+                right = mid - 1;
+                continue;
+            }
+            if ((mid+1) <= x/(mid+1)) {
+                left = mid + 1;
+                continue;
+            }
+            return mid;
         }
-        return start;
+        return x;
     }
 }
