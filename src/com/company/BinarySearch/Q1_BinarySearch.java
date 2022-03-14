@@ -7,7 +7,7 @@ public class Q1_BinarySearch {
         int answer = binarySearch(array, target);
         System.out.println(answer);
     }
-    
+
     //return index
     //return -1, if it does not exist
     static int binarySearch(int array[], int target){
