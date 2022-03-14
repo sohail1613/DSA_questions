@@ -1,4 +1,4 @@
-package com.company.Strings;
+package com.company.BinarySearch;
 
 public class Q3_Floor {
     public static void main(String[] args) {
