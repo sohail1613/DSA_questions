@@ -1,4 +1,4 @@
-package com.company;
+package com.company.BinarySearch;
 
 public class Q2_Ceiling {
     public static void main(String[] args) {
