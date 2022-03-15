@@ -1,4 +1,5 @@
 package com.company.BinarySearch;
+//https://leetcode.com/problems/valid-perfect-square/
 
 public class Q7_PerfectSquare {
     public static void main(String[] args) {
