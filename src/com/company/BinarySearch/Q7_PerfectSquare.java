@@ -14,11 +14,9 @@ public class Q7_PerfectSquare {
             mid = low +(high-low)/2;
             if(mid*mid==num){
                 return true;
-            }
-            else if(mid*mid>num){
+            } else if(mid*mid>num){
                 high=(int)mid-1;
-            }
-            else{
+            } else{
                 low=(int)mid+1;
             }
         }
