@@ -1,12 +1,14 @@
 package com.company.BinarySearch;
 //https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
+import java.util.Arrays;
+
 public class Q6_TwoSum {
     public static void main(String[] args) {
         int number[] = {2, 7, 11, 15};
         int target = 9;
         int answer[] = twoSum(number, target);
-        System.out.println(answer);
+        System.out.println(Arrays.toString(answer));
     }
 
     public static int[] twoSum(int numbers[], int target){
