@@ -1,5 +1,5 @@
 package com.company.Sorting;
-
+//asked in Amazon and Microsoft
 public class Q7_FindDuplicate {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 2, 2};
