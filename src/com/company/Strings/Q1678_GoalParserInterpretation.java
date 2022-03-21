@@ -18,7 +18,7 @@ public class Q1678_GoalParserInterpretation {
                     i++;
                 } else{
                     sb.append("al");
-                    i=i+3;
+                    i=i+2;
                 }
             }
         }
