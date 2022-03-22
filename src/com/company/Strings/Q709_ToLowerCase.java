@@ -14,7 +14,7 @@ public class Q709_ToLowerCase {
         //to store each character from s and then check it's lower or upper case
         char c;
 
-        //iterating whole length od s
+        //iterating whole length of s
         for(int i=0; i<s.length(); i++){
             c= s.charAt(i); // storing characters to s at each index i
 
