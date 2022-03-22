@@ -5,10 +5,14 @@ package com.company.Patterns;
 
 public class SolidRectangle {
     public static void main(String[] args) {
+        System.out.println("Solid Rectangle");
         pattern1(5); //solid rectangle
+        System.out.println("Solid Half Triangle");
         pattern2(5); //Sold half triangle.
+        System.out.println("Solid Inverted Half Triangle");
         pattern3(5); //Inverted solid pyramid
-        pattern4(5); //Numerical half traingle
+        System.out.println("Numerical half triangle");
+        pattern4(5); //Numerical half triangle
     }
 
     private static void pattern3(int n) {
