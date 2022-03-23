@@ -8,5 +8,8 @@ public class Q1_TriangleSum {
         //triangle(array);
     }
 
-
+    static int smTriangle(int arr[]){
+        //base condition
+        
+    }
 }
