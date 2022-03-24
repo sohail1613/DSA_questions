@@ -1,6 +1,5 @@
 package com.company.Bitwise;
 
-
 public class FindUnique {
     public static void main(String[] args) {
         int array[] = {2, 3, 3, 4, 2, 6, 4};
