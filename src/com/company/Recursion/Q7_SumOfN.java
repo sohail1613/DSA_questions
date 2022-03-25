@@ -6,6 +6,7 @@ public class Q7_SumOfN {
     }
 
     static int sum(int n){
+        //base condition
         if (n <= 1){
             return 1;
         }
