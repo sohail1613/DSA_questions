@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class Q18_Pattern1 {
     public static void main(String[] args) {
         pattern(4, 0);
+        triangle(4, 0);
+        System.out.println();
         int array[]={4, 3, 2, 1};
         bubble(array, array.length-1, 0);
         System.out.println(Arrays.toString(array));
@@ -21,6 +23,20 @@ public class Q18_Pattern1 {
         } else {
             System.out.println();
             pattern(row-1, 0);
+        }
+    }
+
+    static void triangle(int row, int col){
+        if (row == 0){
+            return;
+        }
+
+        if (col < row){
+            triangle(row, col+1);
+            System.out.print("* ");
+        } else{
+            triangle(row-1, 0);
+            System.out.println();
         }
     }
 
