@@ -20,13 +20,15 @@ public class Q1_TriangleSum {
         if (arr.length < 1){
             return;
         }
+
+        //creating temporary array and storing the elements of arr[i] + arr[i+1]
         int temp[] = new int[arr.length-1];
         for (int i = 0; i < arr.length-1 ; i++) {
             int x = arr[i] + arr[i+1];
             temp[i] = x;
         }
 
-        sumTriangle(temp);
+        sumTriangle(temp); //passing temporary array in triangle sum
 
         System.out.println(Arrays.toString(arr));
     }
