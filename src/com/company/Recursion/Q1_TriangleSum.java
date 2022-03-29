@@ -1,4 +1,8 @@
 //https://www.geeksforgeeks.org/sum-triangle-from-array/
+//Approach :
+//Recursion is the key. At each iteration create a new array which contains the Sum of consecutive elements in the array passes as parameter.
+//Make a recursive call and pass the newly created array in the previous step.
+//While back tracking print the array (for printing in reverse order).
 
 package com.company.Recursion;
 
