@@ -6,6 +6,7 @@ public class Q25_String {
     public static void main(String[] args) {
         skip("", "adari");
         System.out.println(skipReturn("ankara"));
+        System.out.println(skipApple("Ankaraappleadri"));
 
     }
 
@@ -35,6 +36,19 @@ public class Q25_String {
             return skipReturn(up.substring(1));
         } else {
             return ch + skipReturn(up.substring(1));
+        }
+    }
+
+    //how to skip String
+    static String skipApple(String up){
+        if (up.isEmpty()){
+            return "";
+        }
+
+        if (up.startsWith("apple")){
+            return skipApple(up.substring(5));
+        } else {
+            return up.charAt(0) + skipApple(up.substring(1));
         }
     }
 }
