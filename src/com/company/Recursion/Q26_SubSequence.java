@@ -6,6 +6,7 @@ public class Q26_SubSequence {
     public static void main(String[] args) {
         subSeq("", "abc");
         System.out.println(subSeqList("", "abc"));
+        subSeqAscii("", "abc");
     }
 
     static void subSeq(String p, String up){
@@ -34,5 +35,18 @@ public class Q26_SubSequence {
 
         left.addAll(right);
         return left;
+    }
+
+    static void subSeqAscii(String p, String up){
+        //base condition
+        if (up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+
+        char ch = up.charAt(0);
+        subSeqAscii(p+ch, up.substring(1));
+        subSeqAscii(p, up.substring(1));
+        subSeqAscii(p+(ch+0), up.substring(1));
     }
 }
