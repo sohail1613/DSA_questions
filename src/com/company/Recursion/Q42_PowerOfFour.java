@@ -2,7 +2,7 @@
 
 package com.company.Recursion;
 
-public class Q42_PwerOfFour {
+public class Q42_PowerOfFour {
     public static void main(String[] args) {
         System.out.println(isPowerOfFour(14));
     }
