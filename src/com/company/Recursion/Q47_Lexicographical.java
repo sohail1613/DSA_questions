@@ -17,7 +17,7 @@ public class Q47_Lexicographical {
         Arrays.sort(arr);
         permutationRet(new String(arr), str.length(), -1, "");
     }
-    
+
     private static void permutationRet(String str, int n, int index, String current) {
         //base condition
         if (index == n){
