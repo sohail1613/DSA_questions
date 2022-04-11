@@ -21,24 +21,25 @@ public class Basics {
         return perimeter;
     }
 
-    public double simpleInterest(int amount, int interest, int year){
+    public double Q3_simpleInterest(int amount, int interest, int year){
         double simpleInterest = amount+amount*(interest/100)*year;
         return interest;
     }
-    public double compoundInterest(int amount, int interest, int year){
+    public double Q3_compoundInterest(int amount, int interest, int year){
         double compoundInterest = amount*(1+interest/100) ^ year;
         return compoundInterest;
     }
 
     ///swapping two variables
-    public void swap(int number1, int number2){
+    public void Q4_swap(int number1, int number2){
         int temp = number1;
         number1 = number2;
         number2 = temp;
         System.out.println(number1+" "+number2);
     }
 
-    public void oddEven(int number){
+
+    public void Q6_oddEven(int number){
         if (number % 2 == 0){
             System.out.println("Even");
         } else {
@@ -46,9 +47,29 @@ public class Basics {
         }
     }
 
-    public double temperature(double c, double f){
+    public double Q7_temperature(double c, double f){
         c = (f -32)/1.8;
         return c;
+    }
+
+    public static float Q8_commision(int sales, int age){
+        float comm;
+        if (sales <= 0){
+            comm = 0;
+        } else if (sales >= 10000 && sales < 50000){
+            if (age<60){
+                comm = 0.05f * sales;
+            } else {
+                comm = 0.055f * sales;
+            }
+        } else {
+            if (age <= 60){
+                comm = 0.06f*sales;
+            } else {
+                comm = 0.065f*sales;
+            }
+        }
+        return comm;
     }
 
     public int arithmetic(int number1, int number2, String operator){
