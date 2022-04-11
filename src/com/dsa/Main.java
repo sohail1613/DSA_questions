@@ -39,12 +39,30 @@ public class Main {
 //        int ans = basics.power1(5);
 //        System.out.println("ans");
 
-        //Q8 calculating commision
-        Scanner sc = new Scanner(System.in);
-        int sales = sc.nextInt();
-        int age = sc.nextInt();
-        float ans = basics.Q8_commision(sales, age);
-        System.out.println("Commission :"+ans);
-    }
+//        //Q8 calculating commision
+//        Scanner sc = new Scanner(System.in);
+//        int sales = sc.nextInt();
+//        int age = sc.nextInt();
+//        float ans = basics.Q8_commision(sales, age);
+//        System.out.println("Commission :"+ans);
+//    }
 
+//        Q10_find factorial
+//        Scanner fb = new Scanner(System.in);
+//        int number = fb.nextInt();
+//        int fact = basics.Q10_factorial(number);
+//        System.out.println("factorial is : " + fact);
+
+//        Q13_fibonacci series
+//        Scanner fibo = new Scanner(System.in);
+//        int number = fibo.nextInt();
+//        basics.Q13_fibonacciSeries(number);
+
+        //Q16 GCD or HCF
+        Scanner sc = new Scanner(System.in);
+        int number1 = sc.nextInt();
+        int number2 = sc.nextInt();
+        int gcd = basics.Q16_gcd(number1, number2);
+        System.out.println(gcd);
+    }
 }

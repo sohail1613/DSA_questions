@@ -1,6 +1,8 @@
 package com.dsa.questions;
 
 
+import java.io.FilterOutputStream;
+
 public class Basics {
 
     public float Q1_Average(float a, float b, float c){
@@ -72,7 +74,7 @@ public class Basics {
         return comm;
     }
 
-    public int arithmetic(int number1, int number2, String operator){
+    public int Q9_arithmetic(int number1, int number2, String operator){
 
         char op = operator.charAt(0);
 
@@ -103,5 +105,43 @@ public class Basics {
 //
 //    }
 
+    public int Q10_factorial(int number){
+        int factorial=1;
+        if (number <= 0){
+            System.out.println("Enter positive number");
+        }
+        if (number > 0){
+            for (int i =1 ; i<= number; i++){
+                factorial = factorial*i;
+            }
+        }
+        return factorial;
+    }
+
+    public int Q13_fibonacciSeries(int number){
+        int term1 =0;
+        int term2 =1;
+        System.out.print(term1+" "+term2+" ");
+        int term3 =0;
+        for (int i=2; i<=number; i++){
+            term3 = term1+term2;
+            System.out.print(term3+" ");
+            term1  = term2;
+            term2 = term3;
+        }
+        return term3;
+    }
+
+    public int Q16_gcd(int number1, int number2){
+        int temp;
+        int temp1 = number1;
+        int temp2 = number2;
+        while (temp2 != 0 ){
+            temp = temp2;
+            temp2 = temp1 % temp2;
+            temp1 = temp;
+        }
+        return temp1;
+    }
 
 }
