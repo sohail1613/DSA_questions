@@ -3,19 +3,19 @@ package com.dsa.questions;
 
 public class Basics {
 
-    public float average(float a, float b, float c){
+    public float Q1_Average(float a, float b, float c){
         float sum = a+b+c;
         float average = (sum / 3);
         return average;
     }
 
 //    area and parameter of circle (given radius)
-    public  double circleArea(int radius){
+    public  double Q2_circleArea(int radius){
         double pi = 3.14;
         double area = pi*(radius*radius);
         return area;
     }
-    public double circleParameter(int radius){
+    public double Q2_circleParameter(int radius){
         double pi = 3.14;
         double perimeter = pi*(2*radius);
         return perimeter;

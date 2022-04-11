@@ -36,8 +36,8 @@ public class Main {
 //         int ans = basics.arithmetic(number1, number2, operator);
 //        System.out.println(ans);
 
-        int ans = basics.power1(5);
-        System.out.println(ans);
+//        int ans = basics.power1(5);
+        System.out.println("ans");
     }
 
 }
