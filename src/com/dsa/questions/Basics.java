@@ -144,4 +144,64 @@ public class Basics {
         return temp1;
     }
 
+    public int Q17_digitSum(int digit){
+        int sum = 0;
+        while(digit != 0){
+            int remainder = digit % 10;
+            sum = sum + remainder;
+            digit = digit/10;
+        }
+        return sum;
+    }
+
+    public int Q18_reverse(int number){
+        int rev = 0;
+        while(number != 0){
+            int remainder = number % 10;
+            rev = (rev * 10) + remainder;
+            number = number / 10;
+        }
+        return rev;
+    }
+
+    public int Q19_palindrome(int number){
+        int temp = number;
+        if (temp == Q18_reverse(number)){
+            return number;
+        } else {
+            return 0;
+        }
+    }
+
+    public int Q20_smallestNumber(int number1, int number2, int number3){
+        int temp, smallest;
+        if (number1 < number2){
+            temp = number1;
+        } else{
+            temp = number2;
+        }
+
+        if (temp < number3){
+            smallest = temp;
+        } else {
+            smallest= number3;
+        }
+        return smallest;
+    }
+
+    public int Q20_largestNumber(int number1, int number2, int number3){
+        int temp,largest;
+        if (number1> number2){
+            temp = number1;
+        } else {
+            temp = number2;
+        }
+        if (temp > number3){
+            largest = temp;
+        } else {
+            largest = number3;
+        }
+        return largest;
+    }
+
 }
