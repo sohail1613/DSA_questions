@@ -96,5 +96,14 @@ public class Main {
 //        int largest = basics.Q20_largestNumber(number1, number2, number3);
 //        System.out.println(largest);
 
+//        Q21_print prime number between intervals
+        int number1 = sc.nextInt();
+        int number2 = sc.nextInt();
+        for (int i=number1; i<= number2; i++){
+            if (basics.Q21_isPrime(i)){
+                System.out.print(i+" ");
+            }
+        }
+        sc.close();
     }
 }

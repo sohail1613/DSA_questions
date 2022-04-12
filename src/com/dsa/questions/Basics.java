@@ -204,4 +204,20 @@ public class Basics {
         return largest;
     }
 
+    public boolean Q21_isPrime(int number){
+        if (number == 0 || number == 1){
+            return false;
+        }
+        if (number == 2){
+            return true;
+        }
+
+        for (int i=2; i*i<= number; i++){
+            if (number % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
