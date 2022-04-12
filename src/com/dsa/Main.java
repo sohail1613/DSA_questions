@@ -25,7 +25,7 @@ public class Main {
 //        System.out.println("Compound Interest :"+answer3);
 //
 //        basics.Q4_swap(10, 20);
-        basics.Q5_swapping(10, 20);
+//        basics.Q5_swapping(10, 20);
 //
 //        basics.oddEven(234);
 
@@ -106,5 +106,14 @@ public class Main {
 //            }
 //        }
 //        sc.close();
+
+//        Arrays
+//        int[] arr = {1, 2, 3,4, 5};
+//        basics.Q1_Arrays(arr);
+
+//        Traversing arrya
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
+        int answer = basics.Q2_traversingArray(array);
+        System.out.println(answer);
     }
 }

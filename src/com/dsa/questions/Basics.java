@@ -237,4 +237,20 @@ public class Basics {
         return true;
     }
 
+    //Arrays
+    public void Q1_Arrays(int[] arr){
+        for (int i = 0; i <= arr.length-1; i++) {
+            System.out.print(arr[i]+" ");
+        }
+    }
+
+    //Traversing Array
+    public int Q2_traversingArray(int[] array){
+        int sum = 0;
+        for (int i=0; i<= array.length-1; i++){
+            sum += array[i];
+        }
+        return sum;
+    }
+
 }
