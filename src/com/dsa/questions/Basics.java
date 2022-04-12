@@ -1,8 +1,6 @@
 package com.dsa.questions;
 
 
-import java.io.FilterOutputStream;
-
 public class Basics {
 
     public float Q1_Average(float a, float b, float c){
@@ -251,6 +249,21 @@ public class Basics {
             sum += array[i];
         }
         return sum;
+    }
+
+//    Array sorting
+    public int[] Q3_bubbleSorting(int[] array){
+        for (int i = 0; i < array.length; i++) {
+            for (int j=0; j< array.length-i-1; j++){
+                if (array[j] > array[j+1]){
+                    //swap
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+        }
+        return array;
     }
 
 }

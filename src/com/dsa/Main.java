@@ -2,6 +2,7 @@ package com.dsa;
 
 import com.dsa.questions.Basics;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -111,9 +112,14 @@ public class Main {
 //        int[] arr = {1, 2, 3,4, 5};
 //        basics.Q1_Arrays(arr);
 
-//        Traversing arrya
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
-        int answer = basics.Q2_traversingArray(array);
-        System.out.println(answer);
+//        Traversing array
+//        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
+//        int answer = basics.Q2_traversingArray(array);
+//        System.out.println(answer);
+
+        //Array sorting
+        int[] array = {3, 5, 2, 1, 7, 8, 9};
+        int[] answer = basics.Q3_bubbleSorting(array);
+        System.out.println(Arrays.toString(answer));
     }
 }
