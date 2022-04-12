@@ -118,8 +118,10 @@ public class Main {
 //        System.out.println(answer);
 
         //Array sorting
-        int[] array = {3, 5, 2, 1, 7, 8, 9};
-        int[] answer = basics.Q3_bubbleSorting(array);
-        System.out.println(Arrays.toString(answer));
+//        int[] array = {3, 5, 2, 1, 7, 8, 9};
+//        int[] answer = basics.Q3_bubbleSorting(array);
+//        System.out.println(Arrays.toString(answer));
+
+//        
     }
 }
