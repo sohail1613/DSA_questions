@@ -24,7 +24,8 @@ public class Main {
 //        double answer3 = basics.compoundInterest(2000, 7, 4);
 //        System.out.println("Compound Interest :"+answer3);
 //
-//        basics.swap(10, 20);
+//        basics.Q4_swap(10, 20);
+        basics.Q5_swapping(10, 20);
 //
 //        basics.oddEven(234);
 
@@ -97,13 +98,13 @@ public class Main {
 //        System.out.println(largest);
 
 //        Q21_print prime number between intervals
-        int number1 = sc.nextInt();
-        int number2 = sc.nextInt();
-        for (int i=number1; i<= number2; i++){
-            if (basics.Q21_isPrime(i)){
-                System.out.print(i+" ");
-            }
-        }
-        sc.close();
+//        int number1 = sc.nextInt();
+//        int number2 = sc.nextInt();
+//        for (int i=number1; i<= number2; i++){
+//            if (basics.Q21_isPrime(i)){
+//                System.out.print(i+" ");
+//            }
+//        }
+//        sc.close();
     }
 }

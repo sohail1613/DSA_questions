@@ -40,6 +40,14 @@ public class Basics {
         System.out.println(number1+" "+number2);
     }
 
+    // swap two variables only using two variables
+    public void Q5_swapping(int number1, int number2){
+        number1 = number1 + number2;
+        number2 = number1 - number2;
+        number1 = number1 - number2;
+        System.out.println(number1+" "+number2);
+    }
+
 
     public void Q6_oddEven(int number){
         if (number % 2 == 0){
@@ -118,6 +126,8 @@ public class Basics {
         return factorial;
     }
 
+//    solve factorial using while loop
+
     public int Q13_fibonacciSeries(int number){
         int term1 =0;
         int term2 =1;
@@ -131,7 +141,13 @@ public class Basics {
         }
         return term3;
     }
+    // solve using while loop
 
+
+
+
+    // improve this you are using extra variables //
+    // allternative method to calculate gcd //
     public int Q16_gcd(int number1, int number2){
         int temp;
         int temp1 = number1;
@@ -143,6 +159,7 @@ public class Basics {
         }
         return temp1;
     }
+
 
     public int Q17_digitSum(int digit){
         int sum = 0;
