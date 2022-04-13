@@ -137,8 +137,17 @@ public class Main {
 //          basics.Q4_printMatrix(array);
 
         //String
-        String name = "Sohail";
-        int answer = basics.Q5_stringLength(name);
-        System.out.println(answer);
+//        String name = "Sohail";
+//        int answer = basics.Q5_stringLength(name);
+//        System.out.println(answer);
+
+
+//        2D-Matrix sum
+//        int[][] matrix = {{1, 2, 3},
+//                          {4, 5, 6},
+//                          {7, 8, 9}};
+//        basics.Q6_matrixSum(matrix);
+
+        
     }
 }
