@@ -140,12 +140,25 @@ public class Basics {
         return term3;
     }
     // solve using while loop
-
+    public int Q13_fibonacci(int number){
+        int term1 = 0;
+        int term2 = 1;
+        int i=1;
+        int temp=0;
+        while(i <= number){
+            System.out.print(term1+" ");
+            temp = term1+term2;
+            term1 = term2;
+            term2 = temp;
+            i++;
+        }
+        return temp;
+    }
 
 
 
     // improve this you are using extra variables //
-    // allternative method to calculate gcd //
+    // alternative method to calculate gcd //
     public int Q16_gcd(int number1, int number2){
         int temp;
         int temp1 = number1;
@@ -156,6 +169,16 @@ public class Basics {
             temp1 = temp;
         }
         return temp1;
+    }
+//    improved
+    public int Q16_improved(int number1, int number2){
+        int temp;
+        while(number2 != 0){
+            temp = number2;
+            number2 = number1 % number2;
+            number1 = temp;
+        }
+        return number1;
     }
 
 
@@ -275,5 +298,7 @@ public class Basics {
             System.out.println();
         }
     }
+
+
 
 }

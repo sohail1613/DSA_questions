@@ -61,12 +61,22 @@ public class Main {
 //        int number = fibo.nextInt();
 //        basics.Q13_fibonacciSeries(number);
 
+//        while loop solution
+//        int number = sc.nextInt();
+//        basics.Q13_fibonacci(number);
+
         //Q16 GCD or HCF
 //        Scanner sc = new Scanner(System.in);
 //        int number1 = sc.nextInt();
 //        int number2 = sc.nextInt();
 //        int gcd = basics.Q16_gcd(number1, number2);
 //        System.out.println(gcd);
+
+//        improved version
+        int number1 = sc.nextInt();
+        int number2 = sc.nextInt();
+        int gcd = basics.Q16_improved(number1, number2);
+        System.out.println(gcd);
 
 
         //Q17_sum of digits
@@ -123,7 +133,9 @@ public class Main {
 //        System.out.println(Arrays.toString(answer));
 
 //        Array matrix
-          int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-          basics.Q4_printMatrix(array);
+//          int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//          basics.Q4_printMatrix(array);
+
+
     }
 }
