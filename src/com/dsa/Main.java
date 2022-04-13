@@ -122,6 +122,8 @@ public class Main {
 //        int[] answer = basics.Q3_bubbleSorting(array);
 //        System.out.println(Arrays.toString(answer));
 
-//        
+//        Array matrix
+          int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+          basics.Q4_printMatrix(array);
     }
 }
