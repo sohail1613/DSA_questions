@@ -299,6 +299,15 @@ public class Basics {
         }
     }
 
+//    String length
+    public int Q5_stringLength(String word){
+        int length=0;
+        char[] size = word.toCharArray();
+        for (char c: size){
+            length++;
+        }
+        return length;
+    }
 
 
 }

@@ -73,10 +73,10 @@ public class Main {
 //        System.out.println(gcd);
 
 //        improved version
-        int number1 = sc.nextInt();
-        int number2 = sc.nextInt();
-        int gcd = basics.Q16_improved(number1, number2);
-        System.out.println(gcd);
+//        int number1 = sc.nextInt();
+//        int number2 = sc.nextInt();
+//        int gcd = basics.Q16_improved(number1, number2);
+//        System.out.println(gcd);
 
 
         //Q17_sum of digits
@@ -136,6 +136,9 @@ public class Main {
 //          int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 //          basics.Q4_printMatrix(array);
 
-
+        //String
+        String name = "Sohail";
+        int answer = basics.Q5_stringLength(name);
+        System.out.println(answer);
     }
 }
