@@ -404,4 +404,17 @@ public class Basics {
     public int numberSum(int number1, int number2){
         return number1 + number2;
     }
+
+//    Question_27- Calculate Average Of N Numbers
+    public int average(int number){
+        int sum = 0;
+        float n ;
+        int count = 1;
+        while(count <= number ){
+            n = sc.nextInt();
+            sum += n;
+            ++count;
+        }
+        return sum/number;
+    }
 }
