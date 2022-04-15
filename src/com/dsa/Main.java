@@ -184,7 +184,11 @@ public class Main {
 //        System.out.println(basics.average(number));
 
 //        Question_28-Sum Of N Numbers
+//        int number = sc.nextInt();
+//        System.out.println(basics.sumOfNumbers(number));
+
+//        Question_29-Armstrong Number In Java
         int number = sc.nextInt();
-        System.out.println(basics.sumOfNumbers(number));
+        System.out.println(basics.armstrongNumber(number));
     }
 }
