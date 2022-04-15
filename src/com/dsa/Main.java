@@ -195,9 +195,14 @@ public class Main {
 //        int number = sc.nextInt();
 //        System.out.println(basics.armstrongNumber(number));
 
-//        Question_32-Reverse A String In Java
-        String str = "Sohail";
-        System.out.println("Original string is :"+str);
-        System.out.println(basics.reverseString(str));
+//        Question_31-Reverse A String In Java
+//        String str = "Sohail";
+//        System.out.println("Original string is :"+str);
+//        System.out.println(basics.reverseString(str));
+
+//        Question 32-Power In Java
+        int number1 = sc.nextInt();
+        int number2 = sc.nextInt();
+        System.out.println(basics.power(number1, number2));
     }
 }

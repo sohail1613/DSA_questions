@@ -475,4 +475,9 @@ public class Basics {
         }
         return alphabet; //returning reversed string
     }
+
+//    Question 32-Power In Java
+    public int power(int number1, int number2){
+        return (int)(Math.pow(number1, number2));
+    }
 }
