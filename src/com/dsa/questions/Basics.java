@@ -473,6 +473,6 @@ public class Basics {
             c = word.charAt(i); //extracting characters
             alphabet = c + alphabet;  //adding each character
         }
-        return alphabet;
+        return alphabet; //returning reversed string
     }
 }
