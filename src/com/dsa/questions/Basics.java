@@ -431,8 +431,8 @@ public class Basics {
         return sum;
     }
 
-//    Question_29-Armstrong Number In Java
-    public boolean armstrongNumber(int number){
+//    Question_29-Palindrome Number In Java
+    public boolean palindromeNumber(int number){
         int remainder;
         int sum=0;
         int temp = number;

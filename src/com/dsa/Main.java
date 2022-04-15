@@ -187,8 +187,10 @@ public class Main {
 //        int number = sc.nextInt();
 //        System.out.println(basics.sumOfNumbers(number));
 
-//        Question_29-Armstrong Number In Java
-        int number = sc.nextInt();
-        System.out.println(basics.armstrongNumber(number));
+//        Question_29-Palindrome Number In Java
+//        int number = sc.nextInt();
+//        System.out.println(basics.palindromeNumber(number));
+
+//        Question_30-
     }
 }
