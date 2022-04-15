@@ -148,6 +148,10 @@ public class Main {
 //                          {7, 8, 9}};
 //        basics.Q6_matrixSum(matrix);
 
-        
+
+//        Question:- Subtract the Product and Sum of Digits of an Integer
+        int digit = sc.nextInt();
+        int subtraction = basics.Q23_subtractProductAndSum(digit);
+        System.out.println(subtraction);
     }
 }

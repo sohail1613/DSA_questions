@@ -332,4 +332,16 @@ public class Basics {
             System.out.println();
         }
     }
+
+//  Q23  Subtract the Product and Sum of Digits of an Integer
+    public int Q23_subtractProductAndSum(int number){
+        int sum=0;
+        int product = 1;
+        while(number != 0){
+            sum += number % 10;
+            product *= number % 10;
+            number = number / 10;
+        }
+        return (product - sum);
+    }
 }
