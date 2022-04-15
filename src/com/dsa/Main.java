@@ -55,6 +55,11 @@ public class Main {
 //        int fact = basics.Q10_factorial(number);
 //        System.out.println("factorial is : " + fact);
 
+//        improved of factorial
+//        int number = sc.nextInt();
+//        int factorial = basics.Q11_factorial(number);
+//        System.out.println(factorial);
+
 //        Q13_fibonacci series
 //        Scanner fibo = new Scanner(System.in);
 //        int number = fibo.nextInt();
@@ -164,9 +169,10 @@ public class Main {
 //        System.out.println(numberSum);
 
 //        Question-Take integer inputs till the user enters 0 and print the largest number from all.
-        int number = sc.nextInt();
-        int answer = basics.Q26_printLargestNumber(number);
-        System.out.println(answer);
+//        int number = sc.nextInt();
+//        int answer = basics.Q26_printLargestNumber(number);
+//        System.out.println(answer);
+
 
     }
 }

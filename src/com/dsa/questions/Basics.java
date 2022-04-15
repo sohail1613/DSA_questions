@@ -128,6 +128,14 @@ public class Basics {
     }
 
 //    solve factorial using while loop
+    public int Q11_factorial(int number){
+        int factorial=1;
+        while(number > 0){
+            factorial = factorial*number;
+            number--;
+        }
+        return factorial;
+    }
 
     public int Q13_fibonacciSeries(int number){
         int term1 =0;
