@@ -150,8 +150,12 @@ public class Main {
 
 
 //        Question:- Subtract the Product and Sum of Digits of an Integer
-        int digit = sc.nextInt();
-        int subtraction = basics.Q23_subtractProductAndSum(digit);
-        System.out.println(subtraction);
+//        int digit = sc.nextInt();
+//        int subtraction = basics.Q23_subtractProductAndSum(digit);
+//        System.out.println(subtraction);
+
+//        Question-Input a number and print all the factors of that number (use loops)
+        int number = sc.nextInt();
+        basics.Q24_factors(number);
     }
 }

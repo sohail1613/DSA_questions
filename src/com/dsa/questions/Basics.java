@@ -344,4 +344,13 @@ public class Basics {
         }
         return (product - sum);
     }
+
+//    Q24_Input a number and print all the factors of that number (use loops)
+    public void Q24_factors(int number){
+        for (int i=1; i< number; i++){ //we can't start loop from zero, it wll give error
+            if (number % i == 0){
+                System.out.print(i+" ");
+            }
+        }
+    }
 }
