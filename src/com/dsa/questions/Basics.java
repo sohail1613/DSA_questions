@@ -366,8 +366,9 @@ public class Basics {
     }
 
 //    Question: Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
-    public int Q25_numberSum(int number) {
+    public int Q25_numberSum() {
         int sum = 0;
+        int number;
         while (true) {
             System.out.print("Enter number :");
             number = sc.nextInt();
@@ -383,8 +384,9 @@ public class Basics {
     }
 
 //    Question-Take integer inputs till the user enters 0 and print the largest number from all.
-    public int Q26_printLargestNumber(int number){
-        int largest = 1;
+    public int Q26_printLargestNumber(){
+        int largest = 0;
+        int number;
         while(true){
             System.out.print("Enter number : ");
             number = sc.nextInt();
@@ -393,7 +395,7 @@ public class Basics {
             if (number == 0){
                 break;
             }
-            if (largest < number) {
+            if(number > largest){
                 largest = number;
             }
         }
@@ -477,7 +479,20 @@ public class Basics {
     }
 
 //    Question 32-Power In Java
-    public int power(int number1, int number2){
-        return (int)(Math.pow(number1, number2));
+    public int findPower(int base, int power){
+        int ans = 1;
+        while(power != 0){
+            ans = ans*base;
+            power--;
+        }
+        return ans;
     }
+//    2D matrix
+//    public int[][] matrix(int[][] arr){
+//        for (int i = 0; i< arr.length; i++){
+//            for (int j=0; j< arr[i].length; j++){
+//                System.out.println(arr[i][j]);
+//            }
+//        }
+//    }
 }

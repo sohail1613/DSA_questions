@@ -165,12 +165,12 @@ public class Main {
 //        Que-Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
 //        System.out.print("Enter number :");
 //        int number = sc.nextInt();
-//        int numberSum = basics.Q25_numberSum(number);
+//        int numberSum = basics.Q25_numberSum();
 //        System.out.println(numberSum);
 
 //        Question-Take integer inputs till the user enters 0 and print the largest number from all.
 //        int number = sc.nextInt();
-//        int answer = basics.Q26_printLargestNumber(number);
+//        int answer = basics.Q26_printLargestNumber();
 //        System.out.println(answer);
 
 //        Question26-Addition Of Two Numbers
@@ -201,8 +201,8 @@ public class Main {
 //        System.out.println(basics.reverseString(str));
 
 //        Question 32-Power In Java
-        int number1 = sc.nextInt();
-        int number2 = sc.nextInt();
-        System.out.println(basics.power(number1, number2));
+//        int base = sc.nextInt();
+//        int power = sc.nextInt();
+//        System.out.println(basics.findPower(base, power));
     }
 }
