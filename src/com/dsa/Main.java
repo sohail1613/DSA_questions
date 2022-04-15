@@ -191,6 +191,8 @@ public class Main {
 //        int number = sc.nextInt();
 //        System.out.println(basics.palindromeNumber(number));
 
-//        Question_30-
+//        Question_30-Armstrong Number In Java
+        int number = sc.nextInt();
+        System.out.println(basics.armstrongNumber(number));
     }
 }

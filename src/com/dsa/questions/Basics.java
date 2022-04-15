@@ -447,4 +447,21 @@ public class Basics {
             return false;
         }
     }
+
+//    Question 30-Armstrong Number In Java
+    public boolean armstrongNumber(int number){
+        int sum=0;
+        int remainder;
+        int temp = number;
+        while(number != 0){
+            remainder = number % 10;
+            sum = sum+(remainder*remainder*remainder);
+            number /= 10;
+        }
+        if (sum == temp){
+            return true;
+        } else{
+            return false;
+        }
+    }
 }
