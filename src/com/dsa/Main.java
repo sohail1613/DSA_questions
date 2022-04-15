@@ -2,7 +2,6 @@ package com.dsa;
 
 import com.dsa.questions.Basics;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -155,7 +154,13 @@ public class Main {
 //        System.out.println(subtraction);
 
 //        Question-Input a number and print all the factors of that number (use loops)
+//        int number = sc.nextInt();
+//        basics.Q24_factors(number);
+
+//        Que-Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+        System.out.print("Enter number :");
         int number = sc.nextInt();
-        basics.Q24_factors(number);
+        int numberSum = basics.Q25_numberSum(number);
+        System.out.println(numberSum);
     }
 }

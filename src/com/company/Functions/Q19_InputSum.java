@@ -5,18 +5,21 @@ package com.company.Functions;
 import java.util.Scanner;
 
 public class Q19_InputSum {
-    public static void printInputSum(int number){
-        int sum=0;
-        System.out.print("Enter number :");
-        while (true){
+    public static int printInputSum(int number){
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        while (true) {
+            System.out.print("Enter number :");
+            number = sc.nextInt();
 
-            if (number==0)
-                break;   // Terminating on pressing zero(0)
-            else {
-                sum=sum+number;
+            //terminating condition, when user enter zero.
+            if (number == 0){
+                break;
+            } else {
+                sum += number;
             }
         }
-        System.out.println("Sum of all inputs :"+sum);
+        return sum;
     }
 
     public static void main(String[] args) {
@@ -24,6 +27,6 @@ public class Q19_InputSum {
         System.out.print("Enter number :");
         int number= sc.nextInt();
 
-        printInputSum(number);
+        System.out.println(printInputSum(number));
     }
 }

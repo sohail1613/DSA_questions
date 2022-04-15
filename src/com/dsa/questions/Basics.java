@@ -1,7 +1,10 @@
 package com.dsa.questions;
 
 
+import java.util.Scanner;
+
 public class Basics {
+    Scanner sc = new Scanner(System.in);
 
     public float Q1_Average(float a, float b, float c){
         float sum = a+b+c;
@@ -352,5 +355,22 @@ public class Basics {
                 System.out.print(i+" ");
             }
         }
+    }
+
+//    Question: Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+    public int Q25_numberSum(int number) {
+        int sum = 0;
+        while (true) {
+            System.out.print("Enter number :");
+            number = sc.nextInt();
+
+            //terminating condition, when user enter zero.
+            if (number == 0){
+                break;
+            } else {
+                sum += number;
+            }
+        }
+        return sum;
     }
 }
