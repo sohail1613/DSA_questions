@@ -417,4 +417,17 @@ public class Basics {
         }
         return sum/number;
     }
+
+//    Question_28-Sum Of N Numbers
+    public int sumOfNumbers(int number){
+        int sum =0;
+        int count =1;
+        int n;
+        while(count <= number){
+            n = sc.nextInt();
+            sum += n;
+            ++count;
+        }
+        return sum;
+    }
 }

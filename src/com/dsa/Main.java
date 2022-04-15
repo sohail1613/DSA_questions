@@ -179,8 +179,12 @@ public class Main {
 //        System.out.println(basics.numberSum(number1, number2));
 
 //        Question 27-Calculate Average Of N Numbers
-        System.out.print("Enter n number: ");
+//        System.out.print("Enter n number: ");
+//        int number = sc.nextInt();
+//        System.out.println(basics.average(number));
+
+//        Question_28-Sum Of N Numbers
         int number = sc.nextInt();
-        System.out.println(basics.average(number));
+        System.out.println(basics.sumOfNumbers(number));
     }
 }
