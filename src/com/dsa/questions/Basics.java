@@ -373,4 +373,22 @@ public class Basics {
         }
         return sum;
     }
+
+//    Question-Take integer inputs till the user enters 0 and print the largest number from all.
+    public int Q26_printLargestNumber(int number){
+        int largest = 1;
+        while(true){
+            System.out.print("Enter number : ");
+            number = sc.nextInt();
+
+            //terminating condition, when user enters zero
+            if (number == 0){
+                break;
+            }
+            if (largest < number) {
+                largest = number;
+            }
+        }
+        return largest;
+    }
 }

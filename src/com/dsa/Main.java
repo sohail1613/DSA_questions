@@ -158,9 +158,15 @@ public class Main {
 //        basics.Q24_factors(number);
 
 //        Que-Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
-        System.out.print("Enter number :");
+//        System.out.print("Enter number :");
+//        int number = sc.nextInt();
+//        int numberSum = basics.Q25_numberSum(number);
+//        System.out.println(numberSum);
+
+//        Question-Take integer inputs till the user enters 0 and print the largest number from all.
         int number = sc.nextInt();
-        int numberSum = basics.Q25_numberSum(number);
-        System.out.println(numberSum);
+        int answer = basics.Q26_printLargestNumber(number);
+        System.out.println(answer);
+
     }
 }
