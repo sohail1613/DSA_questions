@@ -464,4 +464,15 @@ public class Basics {
             return false;
         }
     }
+
+//    Question 31-Reverse A String In Java
+    public String reverseString(String word){
+        char c;
+        String alphabet = "";
+        for (int i = 0; i<word.length(); i++) {
+            c = word.charAt(i); //extracting characters
+            alphabet = c + alphabet;  //adding each character
+        }
+        return alphabet;
+    }
 }

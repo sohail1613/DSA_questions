@@ -192,7 +192,12 @@ public class Main {
 //        System.out.println(basics.palindromeNumber(number));
 
 //        Question_30-Armstrong Number In Java
-        int number = sc.nextInt();
-        System.out.println(basics.armstrongNumber(number));
+//        int number = sc.nextInt();
+//        System.out.println(basics.armstrongNumber(number));
+
+//        Question_32-Reverse A String In Java
+        String str = "Sohail";
+        System.out.println("Original string is :"+str);
+        System.out.println(basics.reverseString(str));
     }
 }
