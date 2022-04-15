@@ -173,6 +173,11 @@ public class Main {
 //        int answer = basics.Q26_printLargestNumber(number);
 //        System.out.println(answer);
 
+//        Question26-Addition Of Two Numbers
+//        int number1 = sc.nextInt();
+//        int number2 = sc.nextInt();
+//        System.out.println(basics.numberSum(number1, number2));
 
+        
     }
 }

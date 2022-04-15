@@ -399,4 +399,9 @@ public class Basics {
         }
         return largest;
     }
+
+//    Question26- Addition Of Two Numbers
+    public int numberSum(int number1, int number2){
+        return number1 + number2;
+    }
 }
