@@ -204,5 +204,7 @@ public class Main {
 //        int base = sc.nextInt();
 //        int power = sc.nextInt();
 //        System.out.println(basics.findPower(base, power));
+
+
     }
 }
