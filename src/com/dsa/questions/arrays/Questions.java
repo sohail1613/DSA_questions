@@ -2,13 +2,13 @@ package com.dsa.questions.arrays;
 
 public class Questions {
 //    //Q1_Build Array from Permutation
-//    public int[] buildArray(int[] arr){
-//        int ans[] = new int[arr.length];
-//        for (int i = 0; i < arr.length ; i++) {
-//            ans[i] = arr[arr[i]];
-//        }
-//        return ans;
-//    }
+    public int[] buildArray(int[] arr){
+        int ans[] = new int[arr.length];
+        for (int i = 0; i < arr.length ; i++) {
+            ans[i] = arr[arr[i]];
+        }
+        return ans;
+    }
 
 //    Q2_Concatenation of Array
     public int[] concatenate(int[] array1){
@@ -46,4 +46,6 @@ public class Questions {
         }
         return runningSum;
     }
+
+
 }
