@@ -34,4 +34,16 @@ public class Questions {
         }
         return arr3;
     }
+
+//    Running Sum of 1d Array
+    public int[] runningSum(int[] array){
+        int[] runningSum = new int[array.length];
+        runningSum[0] = array[0]; //initializing sum zero
+
+        for (int i=1; i < array.length; i++){
+            //runningSum[i-1] means adding previous value to the current value
+            runningSum[i] = runningSum[i-1] + array[i];
+        }
+        return runningSum;
+    }
 }

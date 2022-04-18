@@ -16,5 +16,9 @@ public class Main {
 //        int[] arr = {6, 7, 8, 9};
 //        int[] answer = que.concat(array1, arr);
 //        System.out.println(Arrays.toString(answer));
+
+//        Question Running Sum of 1d Array
+//        int[] array = {1, 2, 3, 4, 5};
+//        System.out.println(Arrays.toString(que.runningSum(array)));
     }
 }
