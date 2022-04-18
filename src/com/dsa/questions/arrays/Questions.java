@@ -47,5 +47,19 @@ public class Questions {
         return runningSum;
     }
 
+//    Richest Customer Wealth
+    public int maxWealth(int[][] array){
+        int ans = Integer.MIN_VALUE; // assign it to min  value, or zero
 
+        for (int[] element : array){ // for each sub-array element in the array
+            int sum = 0;
+            for (int i : element){
+                sum = sum+i;
+            }
+            if (sum > ans){
+                ans = sum;
+            }
+        }
+        return ans;
+    }
 }

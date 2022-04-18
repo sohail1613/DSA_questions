@@ -20,5 +20,9 @@ public class Main {
 //        Question Running Sum of 1d Array
 //        int[] array = {1, 2, 3, 4, 5};
 //        System.out.println(Arrays.toString(que.runningSum(array)));
+
+//        Question_Richest Customer Wealth
+//        int[][] account = {{1,5},{7,3},{3,5},{5, 8}};
+//        System.out.println(que.maxWealth(account));
     }
 }
