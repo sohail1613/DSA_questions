@@ -9,7 +9,7 @@ public class WrapperExample {
         Integer b = 15;
 
 //        Integer num = 20;
-        Integer num = new Integer(20); // Integer is call wrapper class
+//        Integer num = new Integer(20); // Integer is call wrapper class
 
         swap(a, b);
         System.out.println(a+" "+b);
