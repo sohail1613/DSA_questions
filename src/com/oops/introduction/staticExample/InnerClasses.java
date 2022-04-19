@@ -10,7 +10,7 @@ public class InnerClasses {
     }
 
     public static void main(String[] args) {
-        Test a = new Test("Sohail");
+//        Test a = new Test("Sohail");
     }
 }
 
