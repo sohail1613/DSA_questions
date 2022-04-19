@@ -29,5 +29,11 @@ public class Main {
 //        int[] array = {2,5,1,3,4,7};
 //        int n = 3;
 //        System.out.println(Arrays.toString(que.shuffleArray(array, n)));
+
+//        1512. Number of Good Pairs
+//        int[] array = {1, 2, 3, 1, 1, 3};
+//        System.out.println(que.goodPair(array));
+
+
     }
 }

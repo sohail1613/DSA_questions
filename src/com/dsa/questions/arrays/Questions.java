@@ -77,4 +77,18 @@ public class Questions {
         }
         return result;
     }
+
+//    Question_1512.Number of Good Pairs
+    public int goodPair(int[] array){
+        int pair = 0;
+        for (int i=0; i<array.length; i++){
+            for (int j=0; j<array.length; j++){
+                if (array[i] == array[j] && i<j){
+                    pair++;
+                }
+            }
+        }
+        return pair;
+        //time complexity is: O(N)
+    }
 }
