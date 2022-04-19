@@ -1,5 +1,8 @@
 package com.dsa.questions.arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Questions {
 //    //Q1_Build Array from Permutation
     public int[] buildArray(int[] arr){
@@ -104,6 +107,20 @@ public class Questions {
                 }
             }
             ans[i] = count; // adding total how many smaller numbers present in array then current numbers.
+        }
+        return ans;
+    }
+
+//    https://leetcode.com/problems/create-target-array-in-the-given-order/
+//    Question_1389. Create Target Array in the Given Order
+    public int[] targetArray(int[] array, int[] index){
+        List<Integer> list = new ArrayList<>();
+        int[] ans = new int[array.length];
+        for (int i=0; i<array.length; i++){
+            list.add(index[i], array[i]);
+        }
+        for (int i=0; i<array.length; i++){
+            ans[i] = list.get(i);
         }
         return ans;
     }

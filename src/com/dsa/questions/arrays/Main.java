@@ -36,7 +36,11 @@ public class Main {
 
 //        1365. How Many Numbers Are Smaller Than the Current Number
 //        https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
-        int[] array =  {8,1,2,2,3};
-        System.out.println(Arrays.toString(que.smallerNumbersThanCurrent(array)));
+//        int[] array =  {8,1,2,2,3};
+//        System.out.println(Arrays.toString(que.smallerNumbersThanCurrent(array)));
+
+//        int[] nums = {0,1,2,3,4};
+//        int[] index = {0,1,2,2,1};
+//        System.out.println(Arrays.toString(que.targetArray(nums, index)));
     }
 }
