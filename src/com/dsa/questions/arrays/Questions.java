@@ -62,4 +62,11 @@ public class Questions {
         }
         return ans;
     }
+
+//   1470. Shuffle the Array
+    public int[] shuffleArray(int[] arr, int n){
+        int[] shuffle = new int[arr.length];
+
+        return shuffle;
+    }
 }
