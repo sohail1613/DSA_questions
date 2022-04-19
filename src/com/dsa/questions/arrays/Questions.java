@@ -91,4 +91,20 @@ public class Questions {
         return pair;
         //time complexity is: O(N)
     }
+
+//    1365. How Many Numbers Are Smaller Than the Current Number
+    public int[] smallerNumbersThanCurrent(int[] array){
+        int[] ans = new int[array.length];
+        int count;
+        for (int i=0; i< array.length; i++){
+            count = 0;
+            for (int j=0; j<array.length; j++){
+                if (array[i] > array[j]){
+                    count++; // counting greater numbers than current number
+                }
+            }
+            ans[i] = count; // adding total how many smaller numbers present in array then current numbers.
+        }
+        return ans;
+    }
 }
