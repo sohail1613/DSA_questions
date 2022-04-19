@@ -24,5 +24,10 @@ public class Main {
 //        Question_Richest Customer Wealth
 //        int[][] account = {{1,5},{7,3},{3,5},{5, 8}};
 //        System.out.println(que.maxWealth(account));
+
+        //shuffle array
+//        int[] array = {2,5,1,3,4,7};
+//        int n = 3;
+//        System.out.println(Arrays.toString(que.shuffleArray(array, n)));
     }
 }

@@ -65,8 +65,16 @@ public class Questions {
 
 //   1470. Shuffle the Array
     public int[] shuffleArray(int[] arr, int n){
-        int[] shuffle = new int[arr.length];
-
-        return shuffle;
+        int[] result = new int[arr.length];
+        int start = 0;
+        int end = arr.length - n; //we can also use by dividing length to half of array length
+        for (int i=0; i<arr.length; i++){
+            if (i % 2 == 0){
+                result[i] = arr[start++];
+            } else {
+                result[i] = arr[end++];
+            }
+        }
+        return result;
     }
 }
