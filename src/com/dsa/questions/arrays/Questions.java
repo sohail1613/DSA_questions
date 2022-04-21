@@ -124,4 +124,54 @@ public class Questions {
         }
         return ans;
     }
+
+//    https://leetcode.com/problems/check-if-the-sentence-is-pangram/
+    public boolean pangram(String sentence){
+        for (char c='a'; c<='z'; c++){
+            if (!sentence.contains(""+c)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+//    https://leetcode.com/problems/count-items-matching-a-rule/
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue){
+        int count = 0;
+        for (List<String> list : items){ // every item in sub list
+            if (ruleKey.equals("type") && ruleValue.equals(list.get(0))){
+                count++;
+            } else if (ruleKey.equals("color") && ruleValue.equals(list.get(1))){
+                count++;
+            } else if (ruleKey.equals("name") && ruleValue.equals(list.get(2))) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+//    https://leetcode.com/problems/find-the-highest-altitude/
+    public int highestAltitude(int[] gain){
+        int max = Integer.MIN_VALUE;
+        int[] array = new int[gain.length+1];
+        for (int i=0; i<gain.length; i++){
+            array[0] = 0; //At starting point it should be zero
+            //at n+1 point is  = element at index [n] of array and gain.
+            array[i+1] = array[i] + gain[i]; //storing values in array
+        }
+//        for (int i=0; i<array.length; i++){
+//            //if element in array[i] is greater than max, then assign it to the max
+//            if (max < array[i]){
+//                max = array[i];
+//            }
+//        }
+        //comparing every element in the array with max, adn if found small than max, then assigning it to max
+        for (int element: array){
+            if (max < element){
+                max = element;
+            }
+        }
+        return max;
+    }
 }

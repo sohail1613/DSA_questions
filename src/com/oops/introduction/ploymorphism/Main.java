@@ -10,7 +10,6 @@ public class Main {
         circle.area();
         square.area();
     }
-
     //Overloading main method
     public static void main(char[] args) {
         System.out.println("char type");

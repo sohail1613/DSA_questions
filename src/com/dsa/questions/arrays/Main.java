@@ -1,6 +1,7 @@
 package com.dsa.questions.arrays;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,5 +43,19 @@ public class Main {
 //        int[] nums = {0,1,2,3,4};
 //        int[] index = {0,1,2,2,1};
 //        System.out.println(Arrays.toString(que.targetArray(nums, index)));
+
+//        String sentence = "thequickbrownfoxjumpsoverthelazydog";
+//        System.out.println(que.pangram(sentence));
+
+//        List<List<String>> items = {{"phone","blue","pixel"},{"computer","silver","lenovo"},{"phone","gold","iphone"}};
+//        String ruleKey = "color";
+//        String ruleValue = "silver";
+//        int answer = que.countMatches(items, ruleKey, ruleValue);
+//        System.out.println(answer);
+
+//        Highest point
+        int[] gain = {-5,1,5,0,-7};
+       // int[] gain = {-4,-3,-2,-1,4,3,2};
+        System.out.println(que.highestAltitude(gain));
     }
 }
