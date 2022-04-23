@@ -54,8 +54,14 @@ public class Main {
 //        System.out.println(answer);
 
 //        Highest point
-        int[] gain = {-5,1,5,0,-7};
-       // int[] gain = {-4,-3,-2,-1,4,3,2};
-        System.out.println(que.highestAltitude(gain));
+//        int[] gain = {-5,1,5,0,-7};
+//       // int[] gain = {-4,-3,-2,-1,4,3,2};
+//        System.out.println(que.highestAltitude(gain));
+
+        //Flipping an Image
+        int[][] image = {{1,1,0},{1,0,1},{0,0,0}};
+        int[][] answer = que.flipAndInvertImage(image);
+        System.out.println(Arrays.toString(answer));
+
     }
 }
