@@ -192,4 +192,25 @@ public class Questions {
         }
         return image;
     }
+
+    //Question : Cells with Odd Values in a Matrix
+    public int oddCell(int m, int n, int[][] indices){
+        int[] row = new int[m];
+        int[] col = new int[n];
+
+        for (int i=0; i<indices.length; i++){
+            row[indices[i][0]] += 1;
+            col[indices[i][1]] += 1;
+        }
+
+        int result = 0;
+        for (int i=0; i<m; i++){
+            for (int j=0; j<n; j++){
+                if (row[i]+col[j] % 2 != 0){
+                    result ++;
+                }
+            }
+        }
+        return result;
+    }
 }

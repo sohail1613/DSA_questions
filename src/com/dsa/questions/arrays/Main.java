@@ -59,9 +59,14 @@ public class Main {
 //        System.out.println(que.highestAltitude(gain));
 
         //Flipping an Image
-        int[][] image = {{1,1,0},{1,0,1},{0,0,0}};
-        int[][] answer = que.flipAndInvertImage(image);
-        System.out.println(Arrays.toString(answer));
+//        int[][] image = {{1,1,0},{1,0,1},{0,0,0}};
+//        int[][] answer = que.flipAndInvertImage(image);
+//        System.out.println(Arrays.toString(answer));
 
+        //Cells with Odd Values in a Matrix
+        int m = 2;
+        int n = 3;
+        int[][] indices = {{0, 1}, {1, 1}};
+        System.out.println(que.oddCell(m, n, indices));
     }
 }
