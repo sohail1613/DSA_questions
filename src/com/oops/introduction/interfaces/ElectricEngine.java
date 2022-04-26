@@ -13,6 +13,6 @@ public class ElectricEngine implements Engine{
 
     @Override
     public void acc() {
-        System.out.println("Electric engine accelerate");
+        System.out.println("Electric engine accelerate  ");
     }
 }

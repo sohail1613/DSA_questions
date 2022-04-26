@@ -64,9 +64,14 @@ public class Main {
 //        System.out.println(Arrays.toString(answer));
 
         //Cells with Odd Values in a Matrix
-        int m = 2;
-        int n = 3;
-        int[][] indices = {{0, 1}, {1, 1}};
-        System.out.println(que.oddCell(m, n, indices));
+//        int m = 2;
+//        int n = 3;
+//        int[][] indices = {{0, 1}, {1, 1}};
+//        System.out.println(que.oddCell(m, n, indices));
+
+        //1572. Matrix Diagonal Sum
+        //https://leetcode.com/problems/matrix-diagonal-sum/
+//        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//        System.out.println(que.diagonalSum(matrix));
     }
 }

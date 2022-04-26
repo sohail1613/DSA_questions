@@ -213,4 +213,16 @@ public class Questions {
         }
         return result;
     }
+
+//  1572. Matrix Diagonal Sum
+    public int diagonalSum(int[][] matrix){
+        int sum =0;
+        for (int i=0; i< matrix.length; i++){
+            sum += matrix[i][i]; //element at 0,0 || 1,1 || 2,2
+            if (matrix.length-1-i != i){ //element at (last -1 -i) should not be equal to i
+                sum += matrix[i][matrix.length-1-i];
+            }
+        }
+        return sum;
+    }
 }
