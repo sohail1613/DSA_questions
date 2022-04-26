@@ -86,5 +86,7 @@ public class Main {
 //        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 ////        System.out.println(que.matrixTranspose(matrix));
 //        System.out.println(Arrays.deepToString(que.matrixTranspose(matrix)));
+
+        
     }
 }
