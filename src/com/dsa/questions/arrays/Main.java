@@ -80,5 +80,11 @@ public class Main {
 ////        System.out.println(que.findNumbers(numbers));
 ////        System.out.println(que.countNumbers(numbers));
 //        System.out.println(que.countNumbers(numbers));
+
+        //867. Transpose Matrix
+        //https://leetcode.com/problems/transpose-matrix/
+        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+//        System.out.println(que.matrixTranspose(matrix));
+        System.out.println(Arrays.deepToString(que.matrixTranspose(matrix)));
     }
 }

@@ -225,7 +225,7 @@ public class Questions {
         }
         return sum;
     }
-    
+
     //1295. Find Numbers with Even Number of Digits
     //https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
     public int findNumbers(int[] array){
@@ -272,5 +272,17 @@ public class Questions {
             }
         }
         return count;
+    }
+
+    //867. Transpose Matrix
+    //https://leetcode.com/problems/transpose-matrix/
+    public int[][] matrixTranspose(int[][] matrix){
+        int[][] transpose = new int[matrix[0].length][matrix.length];
+        for (int i=0; i<matrix.length; i++){
+            for (int j=0; j<matrix[0].length; j++){
+                transpose[j][i] = matrix[i][j];
+            }
+        }
+        return transpose;
     }
 }
