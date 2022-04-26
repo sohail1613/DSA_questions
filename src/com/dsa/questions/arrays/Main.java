@@ -77,6 +77,8 @@ public class Main {
         //1295. Find Numbers with Even Number of Digits
         //https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 //        int[] numbers= {12, 345, 2, 6, 7896};
-//        System.out.println(que.findNumbers(numbers));
+////        System.out.println(que.findNumbers(numbers));
+////        System.out.println(que.countNumbers(numbers));
+//        System.out.println(que.countNumbers(numbers));
     }
 }

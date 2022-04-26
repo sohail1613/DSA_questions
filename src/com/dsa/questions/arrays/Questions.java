@@ -225,6 +225,7 @@ public class Questions {
         }
         return sum;
     }
+    
     //1295. Find Numbers with Even Number of Digits
     //https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
     public int findNumbers(int[] array){
@@ -233,7 +234,40 @@ public class Questions {
             //numbers between 0 to 10 are one digit hence odd digit
             //number between 10 to 99 are twi digits, hence Even digits
             //like these we will consider and count numbers
-            if ((array[i]>9 && array[i]>100) || (array[i]>999 && array[i]>10000) || array[i] == 100000){
+            if ((array[i]>9 && array[i]<100) || (array[i]>999 && array[i]<10000) || array[i] == 100000){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    //Alternate solution of above problem
+    public int countNumbers(int[] array){
+        int count = 0;
+        for (int i=0; i<array.length; i++){
+            int digit = 0;
+            int element = array[i];
+            while(element != 0){
+                element /= 10;
+                digit++;
+            }
+            if (digit % 2 == 0){
+                count++;
+            }
+        }
+        return count;
+    }
+    
+    //above solution with foreach loop
+    public int countEven(int[] array){
+        int count =0;
+        int digit=0;
+        for (int element: array) {
+            while(element != 0){
+                element /= 10;
+                digit++;
+            }
+            if (digit % 2 == 0){
                 count++;
             }
         }
