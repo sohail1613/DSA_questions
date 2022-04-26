@@ -73,5 +73,10 @@ public class Main {
         //https://leetcode.com/problems/matrix-diagonal-sum/
 //        int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 //        System.out.println(que.diagonalSum(matrix));
+
+        //1295. Find Numbers with Even Number of Digits
+        //https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+//        int[] numbers= {12, 345, 2, 6, 7896};
+//        System.out.println(que.findNumbers(numbers));
     }
 }
