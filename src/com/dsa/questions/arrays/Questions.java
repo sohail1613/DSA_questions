@@ -1,6 +1,7 @@
 package com.dsa.questions.arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -321,5 +322,25 @@ public class Questions {
             }
         }
         return maxYear;
+    }
+
+    //1886. Determine Whether Matrix Can Be Obtained By Rotation
+    //https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
+    public boolean findRotation(int[][] matrix, int[][] target){
+        int[][] reverse = new int[matrix.length][matrix.length];
+
+        //rotating 90 clockwise
+        //we can also rotate further more using same technique(like 180, 270, and 360 degree)
+        for (int i=0; i< matrix.length; i++){
+            for (int j=0; j<matrix.length; j++){
+                reverse[i][j] = matrix[matrix.length-j-1][i];
+            }
+        }
+
+        //here we will compare both matrices and matched then return true, otherwise false
+        if (Arrays.deepEquals(target, reverse)){
+            return true;
+        }
+        return false;
     }
 }

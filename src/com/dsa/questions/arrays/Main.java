@@ -95,7 +95,13 @@ public class Main {
 //        System.out.println(que.addToArrayForm(array, k));
 
         // Maximum Population Year
-        int[][] log = {{1993, 1999}, {2000, 2010}};
-        System.out.println(que.maximumPopulation(log));
+//        int[][] log = {{1993, 1999}, {2000, 2010}};
+//        System.out.println(que.maximumPopulation(log));
+
+        //1886. Determine Whether Matrix Can Be Obtained By Rotation
+        //https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
+//        int[][] matrix = {{1,0}, {0,1}};
+//        int[][] target = {{0,1}, {1,0}};
+//        System.out.println(que.findRotation(matrix, target));
     }
 }
