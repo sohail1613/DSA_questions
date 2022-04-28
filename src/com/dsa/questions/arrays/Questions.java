@@ -301,4 +301,25 @@ public class Questions {
         }
         return result;
     }
+
+    // Maximum Population Year
+    public int maximumPopulation(int[][] logs){
+        int[] year = new int[2051];
+        for (int[] log : logs){
+            year[log[0]] += 1;
+            year[log[1]] -= 1;
+        }
+//        Constraints:
+//          1 <= logs.length <= 100
+//          1950 <= birthi < deathi <= 2050
+        int maxNum = year[1950], maxYear = 1950;
+        for (int i=1950; i<year.length; i++){
+            year[i] += year[i-1];
+            if (year[i] > maxNum){
+                maxNum = year[i];
+                maxYear = i;
+            }
+        }
+        return maxYear;
+    }
 }
