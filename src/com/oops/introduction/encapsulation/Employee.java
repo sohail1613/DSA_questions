@@ -19,8 +19,8 @@ public class Employee {
     }
 
     //setter methods
-    public String setEmpName(String name){
-         return empName =name;
+    public void setEmpName(String name){
+        this.empName =name;
     }
     public int setEmpAge(int age){
         return empAge=age;
