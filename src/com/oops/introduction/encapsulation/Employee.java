@@ -22,11 +22,11 @@ public class Employee {
     public void setEmpName(String name){
         this.empName =name;
     }
-    public int setEmpAge(int age){
-        return empAge=age;
+    public void setEmpAge(int age){
+        this.empAge=age;
     }
-    public double setEmpSalary(double salary){
-        return empSalary=salary;
+    public void setEmpSalary(double salary){
+        this.empSalary=salary;
     }
 
 }
