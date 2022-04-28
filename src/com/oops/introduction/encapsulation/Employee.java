@@ -19,14 +19,14 @@ public class Employee {
     }
 
     //setter methods
-    public void setEmpName(String name){
-         empName =name;
+    public String setEmpName(String name){
+         return empName =name;
     }
-    public void setEmpAge(int age){
-         empAge=age;
+    public int setEmpAge(int age){
+        return empAge=age;
     }
-    public void setEmpSalary(double salary){
-        empSalary=salary;
+    public double setEmpSalary(double salary){
+        return empSalary=salary;
     }
 
 }
