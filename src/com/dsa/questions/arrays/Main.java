@@ -88,5 +88,10 @@ public class Main {
 //        System.out.println(Arrays.deepToString(que.matrixTranspose(matrix)));
 
 
+        //https://leetcode.com/problems/add-to-array-form-of-integer/
+        //989. Add to Array-Form of Integer
+        int[] array = {1, 2, 9, 7};
+        int k=34;
+        System.out.println(que.addToArrayForm(array, k));
     }
 }

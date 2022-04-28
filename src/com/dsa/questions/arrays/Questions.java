@@ -1,6 +1,7 @@
 package com.dsa.questions.arrays;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Questions {
@@ -284,5 +285,20 @@ public class Questions {
             }
         }
         return transpose;
+    }
+
+    //https://leetcode.com/problems/add-to-array-form-of-integer/
+    //989. Add to Array-Form of Integer
+    public List<Integer> addToArrayForm(int[] num, int k){
+        final LinkedList<Integer> result = new  LinkedList<>();
+        int len = num.length-1;
+        while(len>=0 || k!=0){
+            if (len>=0){
+                k += num[len--];
+            }
+            result.addFirst(k%10);
+            k /= 10;
+        }
+        return result;
     }
 }
