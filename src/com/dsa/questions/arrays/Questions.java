@@ -367,4 +367,23 @@ public class Questions {
                 M[j][i] = temp;
             }
     }
+
+    //1. Two Sum
+    //https://leetcode.com/problems/two-sum/
+    public int[] twoSum(int[] array, int target){
+        for (int i=0; i<array.length; i++){
+            for (int j=0; j<array.length; j++){
+                //if i == j then skip cause we are looking for tow different indexed element
+                if (i == j){
+                    continue;
+                }
+                //when target found return its index number
+                if (array[i] + array[j] == target){
+                    int[] arr = {i, j};
+                    return arr;
+                }
+            }
+        }
+        return new int[] {};
+    }
 }
