@@ -103,5 +103,11 @@ public class Main {
 //        int[][] matrix = {{1,0}, {0,1}};
 //        int[][] target = {{0,1}, {1,0}};
 //        System.out.println(que.findRotation(matrix, target));
+
+        //Solution rectify
+        int[][] matrix = {{0,0,0},{0,1,0},{1,1,1}};
+        int[][] target = {{1,1,1},{0,1,0},{0,0,0}};
+        System.out.println(que.findRotationMatrix(matrix, target));
+
     }
 }
