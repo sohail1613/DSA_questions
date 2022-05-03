@@ -387,5 +387,11 @@ public class Questions {
         return new int[] {};
     }
 
-
+    //reverse integer type String
+    //Example input = "1 2 3";
+    //output = 3 2 1
+    public int reverseString(String str){
+        String reverse = "";
+        
+    }
 }

@@ -115,6 +115,10 @@ public class Main {
 //        int target = 9;
 //        System.out.println(Arrays.toString(que.twoSum(nums, target)));
 
+        // reverse integer type String
+        //Example input = "1 2 3";
+        //output = 3 2 1
+        String word = "1 2 3";
 
     }
 }
