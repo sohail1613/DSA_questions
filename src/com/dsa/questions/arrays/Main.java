@@ -119,6 +119,6 @@ public class Main {
         //Example input = "1 2 3";
         //output = 3 2 1
         String word = "1 2 3";
-
+        System.out.println(que.reverseString(word));
     }
 }

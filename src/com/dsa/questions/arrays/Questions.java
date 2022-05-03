@@ -391,7 +391,12 @@ public class Questions {
     //Example input = "1 2 3";
     //output = 3 2 1
     public int reverseString(String str){
-        String reverse = "";
-        
+        int reverse = 0;
+        char c;
+        for (int i= str.length()-1; i>0; --i){
+            c = str.charAt(i);
+            reverse = reverse + c;
+        }
+        return reverse;
     }
 }
