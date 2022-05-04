@@ -118,7 +118,13 @@ public class Main {
         // reverse integer type String
         //Example input = "1 2 3";
         //output = 3 2 1
-        String word = "1 2 3";
-        System.out.println(que.reverseString(word));
+//        String word = "1 2 3";
+//        System.out.println(que.reverseString(word));
+
+        //1304. Find N Unique Integers Sum up to Zero
+        //https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/
+        int integer = 5;
+        System.out.println(Arrays.toString(que.sumZero(integer)));
+
     }
 }
