@@ -410,4 +410,15 @@ public class Questions {
         }
         return result;
     }
+
+    //above solution
+    public void uniqueIntSum(int number){
+        int[] result = new int[number];
+        for (int i=1; i<= number/2; i++){
+            System.out.print(i+", "+(-i)+", ");
+        }
+        if (number%2 == 1){
+            System.out.print(0);
+        }
+    }
 }
