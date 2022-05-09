@@ -428,7 +428,7 @@ public class Questions {
                           "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
                           "seventeen", "eighteen", "nineteen", "twenty", "twenty one", "twenty two",
                           "twenty three", "twenty four", "twenty five", "twenty six", "twenty seven",
-                          "twenty eight", "twenty nine", "thirty"};
+                          "twenty eight", "twenty nine"};
         if (minutes == 0){
             System.out.println(nums[hour]+" o' clock");
         } else if (minutes == 1) {
@@ -443,7 +443,7 @@ public class Questions {
             System.out.println("quarter to "+nums[(hour%12)+1]);
         } else if (minutes <= 30) {
             System.out.println(nums[minutes]+" minutes past "+nums[hour]);
-        } else if (minutes >= 30) {
+        } else if (minutes > 30) {
             System.out.println(nums[60-minutes]+" minutes to "+nums[(hour%12)+1]);
         }
     }
