@@ -2,6 +2,7 @@ package com.dsa.questions.arrays;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -127,5 +128,13 @@ public class Main {
 //        //System.out.println(Arrays.toString(que.sumZero(integer)));
 //        que.uniqueIntSum(integer);
 
+        // convert time into words
+        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter hour :");
+//        int hour = sc.nextInt();
+//        System.out.print("Enter minute :");
+//        int minute = sc.nextInt();
+//
+//        que.inWords(hour, minute);
     }
 }

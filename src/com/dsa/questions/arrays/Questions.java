@@ -421,4 +421,30 @@ public class Questions {
             System.out.print(0);
         }
     }
+
+    //convert time into words
+    public void inWords(int hour, int minutes){
+        String[] nums = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+                          "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+                          "seventeen", "eighteen", "nineteen", "twenty", "twenty one", "twenty two",
+                          "twenty three", "twenty four", "twenty five", "twenty six", "twenty seven",
+                          "twenty eight", "twenty nine", "thirty"};
+        if (minutes == 0){
+            System.out.println(nums[hour]+" o' clock");
+        } else if (minutes == 1) {
+            System.out.println("one minute past "+nums[hour]);
+        } else if (minutes == 59) {
+            System.out.println("one minutes to "+nums[(hour%12)+1]);
+        } else if (minutes == 15) {
+            System.out.println("quarter past "+nums[hour]);
+        } else if (minutes == 30) {
+            System.out.println("half past "+nums[hour]);
+        } else if (minutes == 45) {
+            System.out.println("quarter to "+nums[(hour%12)+1]);
+        } else if (minutes <= 30) {
+            System.out.println(nums[minutes]+" minutes past "+nums[hour]);
+        } else if (minutes >= 30) {
+            System.out.println(nums[60-minutes]+" minutes to "+nums[(hour%12)+1]);
+        }
+    }
 }
