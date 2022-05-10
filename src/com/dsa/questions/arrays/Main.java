@@ -136,5 +136,9 @@ public class Main {
 //        int minute = sc.nextInt();
 //
 //        que.inWords(hour, minute);
+
+//        int[][] matrix = {{3,7,8},{9,11,13},{15,16,17}};
+//        int[][] matrix = {{1,10,4,2},{9,3,8,7},{10,16,17,12}};
+//        System.out.println(que.luckyNumber(matrix));
     }
 }
