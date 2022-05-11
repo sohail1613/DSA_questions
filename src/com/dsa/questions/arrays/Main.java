@@ -143,7 +143,13 @@ public class Main {
 
         //53. Maximum Subarray
         //https://leetcode.com/problems/maximum-subarray/
-        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
-        System.out.println(que.maxSubArray(nums));
+//        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+//        System.out.println(que.maxSubArray(nums));
+
+        //566. Reshape the Matrix
+//        int[][] mat = {{1,2},{3,4}};
+//        int row = 1;
+//        int col = 4;
+//        System.out.println(Arrays.deepToString(que.matrixReshape(mat, row, col)));
     }
 }

@@ -495,5 +495,33 @@ public class Questions {
 
 
 
-    
+//566. Reshape the Matrix
+//    https://leetcode.com/problems/reshape-the-matrix/
+    public int[][] matrixReshape(int[][] matrix, int row, int col){
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        if ((rows * cols) != (row * col)){
+            return matrix;
+        }
+
+        //creating new matrix
+        int[][] output = new int[row][col];
+        int output_row = 0;
+        int output_col = 0;
+
+        //Traversing on matrix
+        for (int i=0; i< rows; i++){
+            for (int j=0; j< cols; j++){
+                output[output_row][output_col] = matrix[i][j];
+                output_col++;
+
+                if (output_col == col){
+                    output_col = 0;
+                    output_row++;
+                }
+            }
+        }
+        return output;
+    }
 }
