@@ -140,5 +140,10 @@ public class Main {
 //        int[][] matrix = {{3,7,8},{9,11,13},{15,16,17}};
 //        int[][] matrix = {{1,10,4,2},{9,3,8,7},{10,16,17,12}};
 //        System.out.println(que.luckyNumber(matrix));
+
+        //53. Maximum Subarray
+        //https://leetcode.com/problems/maximum-subarray/
+        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+        System.out.println(que.maxSubArray(nums));
     }
 }
