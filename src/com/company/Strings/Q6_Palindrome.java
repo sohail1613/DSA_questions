@@ -12,6 +12,7 @@ public class Q6_Palindrome {
 
     private static boolean isWordPalindrome(String word) {
         String reversedWord = getReversedWord(word);
+        //comparing original and reversed word, if equals then palindrome else not.
         if (word.equals(reversedWord)){
             return true;
         }
@@ -19,6 +20,8 @@ public class Q6_Palindrome {
     }
 
     private static String getReversedWord(String word) {
+        //to get reverse string we will iterate from end to start, when original string becomes empty return it
+        //in this way, last alphabet come on first place and first on last vice-versa.
         if (word == null || word .isEmpty()){
             return word;
         }
