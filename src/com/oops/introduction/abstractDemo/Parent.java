@@ -7,7 +7,7 @@ package com.oops.introduction.abstractDemo;
 //if any class that contains one or more abstract method, then class must be declared as abstract
 public abstract class Parent {
     int age;
-    public Parent(int age){ // we can also create constructor pf abstract class
+    public Parent(int age){ // we can also create constructor of abstract class
         this.age = age;
     }
     //we can create abstract static method
