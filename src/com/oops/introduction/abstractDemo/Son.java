@@ -13,7 +13,7 @@ public class Son extends Parent{
 
     @Override
     void career() {
-        System.out.println("I am dhimkane");
+        System.out.println("Benim Sohail");
     }
 
     @Override
