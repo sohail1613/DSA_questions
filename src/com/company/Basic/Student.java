@@ -48,3 +48,20 @@ class Test2{
         a.n();
     }
 }
+
+
+//usage 3 : to invoke current class constructor
+class B{
+    B(){
+        System.out.println("Hello b");
+    }
+    B(int x){
+        this();
+        System.out.println(x);
+    }
+}
+class Test3{
+    public static void main(String[] args) {
+        B b = new B(10);
+    }
+}
