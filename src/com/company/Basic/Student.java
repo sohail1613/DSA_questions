@@ -27,3 +27,24 @@ class TestThis{
         a.display();
     }
 }
+
+
+
+//Usage 2: to invoke current class method
+//1- we may invoke the method of current class by using this keyword.
+//2- If you don't use this keyword, compiler will automatically add this keyword while invoking the method
+class A{
+    void m(){
+        System.out.println("Hello m");
+    }
+    void n(){
+        System.out.println("Hello n");
+        this.m();
+    }
+}
+class Test2{
+    public static void main(String[] args) {
+        A a= new A();
+        a.n();
+    }
+}
