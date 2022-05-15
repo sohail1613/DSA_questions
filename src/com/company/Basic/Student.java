@@ -65,3 +65,16 @@ class Test3{
         B b = new B(10);
     }
 }
+
+//this keyword can be used to return current class instance
+class Delhi {
+    void m(){
+        System.out.println(this);//print same reference ID
+    }
+
+    public static void main(String[] args) {
+        Delhi obj = new Delhi();
+        System.out.println(obj);//print same reference ID
+        obj.m();
+    }
+}
