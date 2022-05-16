@@ -1,4 +1,4 @@
-//Reverse string (using Sting Builder).
+//Reverse string (using Srting Builder).
 
 package com.company.Strings;
 
