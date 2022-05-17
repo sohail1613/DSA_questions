@@ -4,6 +4,8 @@ public class Interview {
     public static void main(String[] args) {
         int[] array = {2, 4, 6, 8, 9, 13, 54, 67};
         System.out.println(returnMax(array));
+        int min = 0;
+        System.out.println(min + "min");
     }
 
     public static int returnMax(int[] arr){
