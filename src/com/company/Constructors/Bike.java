@@ -35,6 +35,9 @@ class Student{
         s.display();
         s.greeting();
         s.changeName("Ansar");
+
+        Student random = new Student(s);
+        System.out.println(random.name);
     }
 
     //we need to add the values of the above properties object by object.
@@ -45,6 +48,21 @@ class Student{
         this.salary = 20000.00f;
     }
 
+    //creating another constructor that actually takes values from another objects
+    Student(Student other){
+        this.id = other.id;
+        this.name = other.name;
+        this.salary = other.salary;
+    }
+
+
+    //Student belinay = new Student(11, "Belinay", 46773289f);
+    //here, this will replaced with belinay
+    Student (int id, String name, float salary){
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
     void greeting(){
         System.out.println("Hello my name is : "+this.name);
         //this keyword used because we are trying to access class item via its object
