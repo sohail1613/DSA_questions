@@ -22,7 +22,7 @@ class Student{
     int id;
     String name;
     float salary;
-    
+
     //method to display values of id, name , salary
     void display(){
         System.out.println(id+" "+name+" "+salary);
@@ -33,7 +33,29 @@ class Student{
         Student s = new Student();
         //displaying values of objects
         s.display();
+        s.greeting();
+        s.changeName("Ansar");
+    }
+
+    //we need to add the values of the above properties object by object.
+    //that keyword is this.
+    Student(){
+        this.id=13;
+        this.name="Sohail";
+        this.salary = 20000.00f;
+    }
+
+    void greeting(){
+        System.out.println("Hello my name is : "+this.name);
+        //this keyword used because we are trying to access class item via its object
+    }
+
+    void changeName(String NewName){
+        name = NewName;
     }
 }
+
+//constructor is a special function, that runs when you create an object and it allocate some variables.
+
 
 
