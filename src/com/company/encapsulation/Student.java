@@ -13,7 +13,7 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
-
+    //getters methods are also known as accessor method.
     public String getName(){
         return name;
     }
