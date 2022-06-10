@@ -9,7 +9,7 @@ public class Student {
     public int getAge() {
         return age;
     }
-
+    //setters methods in java also known as Mutator method.
     public void setAge(int age) {
         this.age = age;
     }
