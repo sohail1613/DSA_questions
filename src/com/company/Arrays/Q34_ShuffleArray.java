@@ -6,12 +6,12 @@ public class Q34_ShuffleArray {
     public static int[] shuffleArray(int[] array, int n){
         int[] shuffled = new int[2*n];
         for (int i=0; i<2*n; i++){
-//            if (i % 2 == 0)
-//                shuffled[i] = array[i/2];
-//            else
-//                shuffled[i] = array[n+i / 2];
+            if (i % 2 == 0)
+                shuffled[i] = array[i/2];
+            else
+                shuffled[i] = array[n+i / 2];
             //we can do with ternary
-            shuffled[i] = i % 2 == 0 ? array[i/2] : array[n+i /2];
+//            shuffled[i] = i % 2 == 0 ? array[i/2] : array[n+i /2];
         }
         return shuffled;
     }
