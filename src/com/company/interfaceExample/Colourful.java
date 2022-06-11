@@ -1,4 +1,4 @@
-package com.company.interferance;
+package com.company.interfaceExample;
 
 public interface Colourful {
     void color1();
@@ -7,10 +7,10 @@ public interface Colourful {
         }
 }
 interface ThirdColor extends Colourful, Colourful.AnotherColour{ //extends nested interfaces.
-    strictfp default void color1(){
+    default void color1(){
         System.out.println("Blue");
     }
-    strictfp default void color2(){
+    default void color2(){
         System.out.println("Navy Blue");
     }
 }

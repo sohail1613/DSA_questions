@@ -1,4 +1,4 @@
-package com.company.interferance;
+package com.company.interfaceExample;
 
 public class A {
     void m1(){
