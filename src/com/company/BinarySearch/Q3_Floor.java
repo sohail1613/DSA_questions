@@ -23,7 +23,7 @@ public class Q3_Floor {
             } else if (target > arr[mid]) {
                 start = mid + 1;
             } else {
-                // ans found
+                // answer found
                 return mid;
             }
         }
