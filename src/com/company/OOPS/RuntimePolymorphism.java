@@ -12,6 +12,12 @@ class Child extends RuntimePolymorphism{
 }
 
 class RuntimeExample {
+
+    //static methods always called first before main
+    static{
+        System.out.println("static method ");
+    }
+
     public static void main(String[] args) {
         RuntimePolymorphism runtime = new Child();
         runtime.run();//it will run child method
